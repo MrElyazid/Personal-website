@@ -1,0 +1,42 @@
+.social-links {
+    display: flex;
+    justify-content: space-around; /* This spreads out the links evenly across the container */
+    align-items: center; /* This vertically centers the links in their container */
+    padding: 20px;
+}
+
+.social-link {
+    text-align: center; /* Centers the text below the icons */
+    margin: 0 10px; /* Adds horizontal spacing between each link */
+}
+
+.social-link p {
+    margin-top: 8px; /* Adds a small space between the icon and the text */
+    color: #666; /* Optional: styles the text color */
+    font-size: 14px; /* Optional: sets the font size for the descriptions */
+}
+
+
+/* Custom CSS to style the surrounding container, for instance */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* More specific styles for the paragraph */
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Custom styles for the button if needed */
+.btn-primary {
+    background-color: #0056b3; /* Custom color */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #004085; /* Darker shade on hover */
+}
