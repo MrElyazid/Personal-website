@@ -1,9 +1,5 @@
 
-
-body {
-    background-color: #f4f4f9;
-    color: #333;
-}
+@import url('https://fonts.googleapis.com/css?family=Comic+Sans+MS&display=swap');
 
 .container {
     max-width: 600px;
@@ -36,4 +32,47 @@ h2 {
 .btn-outline-info:hover {
     background: #17a2b8;
     color: white;
+}
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; 
+}
+
+
+body {
+    background: none; /* Remove any default */
+}
+
+.container, .card, .modal-content {
+    background-color: transparent;
+    color: #000000; /* Adjust text color for visibility */
+}
+
+
+
+.navbar-nav .nav-item .nav-link {
+    color: white; 
+    font-family: 'Comic Sans MS', cursive; 
+} 
+
+
+.navbar .navbar-nav .nav-item .nav-link i {
+    margin-right: 10px;
+}
+
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #cccccc; 
+    background-color: transparent; 
+}
+
+
+.navbar {
+    background-color: #007bff; /* Or any solid color */
+    z-index: 10; /* Higher z-index to stay on top */
 }
