@@ -6,63 +6,19 @@
     <title>About Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="about_style.css">
+    <link rel="stylesheet" href="../styles/navstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <style>
-
-
-html, body  {
-  margin: 0;
-  padding: 0;
-}
-
-    #particle-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-
-                .nav-link {
-            text-transform: capitalize;
-        }
-
-        .nav-link-container {
-            display: flex;
-            align-items: center; 
-        }
-
-        .nav-link-container .fas {
-            margin-right: 8px; 
-        }
-        .nav-item {
-            margin-right: 30px;
-        }
-
-        .navbar-brand {
-            margin-right: 50px;
-        }
-
-
-        @media (min-width: 768px) {
-        .table-responsive {
-            max-width: 900px; 
-            margin: auto;
-        }
-        }
-
-    </style>
+    <link rel="stylesheet" href="../styles/about_style.css">
+    
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../assets/LegendaryCat.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Elyazid's Portfolio
             </a>
@@ -88,7 +44,7 @@ html, body  {
               <li class="nav-item">
                 <div class="nav-link-container">
                   <i class="fas fa-tasks"></i>
-                  <a class="nav-link" href="#"> Projects and skills</a>
+                  <a class="nav-link" href="skills.html"> Projects and skills</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -105,91 +61,66 @@ html, body  {
 
 
 
-
-
-
-
-      <div class="table-responsive mt-5">
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr class="table-primary">
-                  <th>Location / Place</th>
-                  <th>Period Of Time</th>
-                  <th>Additional Info</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>Ecole Nationale des sciences appliquées de Kénitra</td>
-                  <td>2023 - present</td>
-                  <td>Enjoying my time... so far</td>
-                </tr>
-                <tr>
-                  <td>Ecole Nationale des sciences appliquées de Tétouan</td>
-                  <td>2021 - 2023</td>
-                  <td>The North has some beautiful landscapes</td>
-                </tr>
-                <tr>
-                    <td>Hassan Ibn Tabit High school</td>
-                    <td>2018 - 2021</td>
-                    <td>Cringe Days</td>
-                  </tr>
-              </tbody>
-        </table>
-      </div>
-
-
-
-
-
-      <div class="table-responsive mt-5">
-        <table class="table table-striped">
-            <thead>
-                <tr class="table-primary">
-                  <th>Website</th>
-                  <th>Accomplishment </th>
-                  <th>Approximative Time spent</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr>
-                  <td>codewars</td>
-                  <td>Reaching 4 Kyu ( Top 5% worldwide )</td>
-                  <td>+50 hours</td>
-                </tr>
-                <tr>
-                  <td>HackerRank</td>
-                  <td>Python Certficate ( Basic ), problem solving, SQL and Python</td>
-                  <td>+20 hours</td>
-                </tr>
-                <tr>
-                    <td>FreeCodeCamp</td>
-                    <td>Web dev ( html, css ) and a focus on JavaScript, no certificates</td>
-                    <td>+20 hours</td>
-                  </tr>
-
-                  <tr>
-                    <td>Solo Learn</td>
-                    <td>Certificates in : Python Developer, Web developement, C++ intro</td>
-                    <td>+30 hours</td>
-                  </tr>
-              </tbody>
-        </table>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="container my-5">
+        
+        <div class="mb-4">
+            <h4>My Education : </h4>
+            <div class="table-responsive mt-3">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr class="table-primary">
+                            <th>Location / Place</th>
+                            <th>Period Of Time</th>
+                            <th>Additional Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ecole Nationale des sciences appliquées de Kénitra</td>
+                            <td>2023 - present</td>
+                            <td>Enjoying my time... so far</td>
+                        </tr>
+                        <tr>
+                            <td>Ecole Nationale des sciences appliquées de Tétouan</td>
+                            <td>2021 - 2023</td>
+                            <td>The North has some beautiful landscapes</td>
+                        </tr>
+                        <tr>
+                            <td>Hassan Ibn Tabit High school</td>
+                            <td>2018 - 2021</td>
+                            <td>Cringe Days</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+        <div class="my-5">
+            <h4>Personalities I like : </h4>
+            <ul class="list-unstyled">
+                <li>Chess Players: <a href="https://www.youtube.com/@DanielNaroditskyGM" target="_blank">GM Daniel Naroditsky</a>, and <a href="https://en.wikipedia.org/wiki/Garry_Kasparov" target="_blank">GM Garry Kasparov</a></li>
+                <li>Fictional characters: <a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy" target="_blank">Monkey D. Luffy</a>, <a href="https://godofwar.fandom.com/wiki/Kratos" target="_blank">Kratos</a>, <a href="https://baki.fandom.com/wiki/Yuujirou_Hanma" target="_blank">Yuujirou Hanma</a>, <a href="https://jujutsu-kaisen.fandom.com/wiki/Satoru_Gojo" target="_blank">Gojo Satorou</a>, <a href="https://devilmaycry.fandom.com/wiki/Vergil" target="_blank">Vergil</a></li>
+            </ul>
+        </div>
+    
+        <div class="my-5">
+            <h4>Favorite Chess Openings : </h4>
+            <ul class="list-unstyled">
+                <li>I hate d4, I really really hate d4 and the London system players, as black I always try to get some Queen's Gambit Declined variation or Slav Defense against it.</li>
+                <li>Against e4 I usually go with the Caro-Kann, Sicilian Defense, and sometimes e5.</li>
+                <li>As White, almost 99% of the games I play start with e4, then deviate to some Ruy Lopez or Italian variation if black responds with e5.</li>
+            </ul>
+        </div>
+    
+        <div class="my-5">
+            <h4>Additional Info : </h4>
+            <ul class="list-unstyled">
+                <li>I'm pretty bad at football, although not catastrophically bad, but we can say normal bad.</li>
+                <li>I'm good at prompting chatGPT :) </li>
+                <li>That's what I can think of at the moment.</li>
+            </ul>
+        </div>
+    </div>
 
 
 

@@ -7,62 +7,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/navstyle.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-
     <link rel="icon" href="assets/LegendaryCat.jpg" type="image/x-icon">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        #particle-canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-        }
-
-        .nav-link {
-            text-transform: capitalize;
-        }
-
-        .nav-link-container {
-            display: flex;
-            align-items: center; 
-        }
-
-        .nav-link-container .fas {
-            margin-right: 8px; 
-        }
-        .nav-item {
-            margin-right: 30px;
-        }
-
-        .navbar-brand {
-            margin-right: 50px;
-        }
-
-        .custom-img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            opacity: 0.9;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-
-        @media (min-width: 768px) {
-            .custom-img {
-                max-width: 400px; 
-            }
-        }
-    </style>
 </head>
 <body>
     
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -89,7 +42,7 @@
                     <li class="nav-item">
                         <div class="nav-link-container">
                             <i class="fas fa-tasks"></i>
-                            <a class="nav-link" href="#"> Projects and skills</a>
+                            <a class="nav-link" href="pages/skills.html"> Projects and skills</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -104,9 +57,17 @@
     </nav>
 
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 text-center mt-5">
                 <img src="assets/photo.png" class="img-thumbnail custom-img" alt="Elyazid">
+            </div>
+
+            <div class="col-12 col-md-6 text-center mt-5">
+                <h3 id="whoami">$whoami : </h3>
+                <p style="text-align: left;">
+                    Essoly Elyazid, 20 years old, from Casablanca Morocco, I study computer science at <abbr title="Ecole Nationale des sciences appliquées"><a href="https://ensa.uit.ac.ma/">ENSAK</a></abbr>.
+
+                </p>
             </div>
         </div>
     </div>
@@ -115,34 +76,51 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="my-5">
-                    <h3>whoami ? :</h3>
-                    <p>Essoly Elyazid, 20 years old Computer Science enthusiast</p>
+                    <h3 class="h3-header">Opinions : <h6>Best way to know someone!</h6></h3>
+                    <div class="container">
+                        <ul class="list-unstyled">
+                            <li class="list-item">Messi is far better than Ronaldo.</li>
+                            <li class="list-item">Minecraft is the best videogame to ever exist.</li>
+                            <li class="list-item">Using AI when coding is normal, not understanding what you're doing is not.</li>
+                            <li class="list-item">Lichess is better than chess.com.</li>
+                            <li class="list-item">
+                                Harira (<a href="https://en.wikipedia.org/wiki/Harira" target="_blank">Wikipedia</a>) is the pinnacle of Moroccan cuisine, a complete dish in every aspect.
+                            </li>
+                            <li class="list-item">French is too complicated.</li>
+                            <li class="list-item">Linkin Park are underrated.</li>
+                            <li class="list-item">Obsidian is better than Notion.</li>
+                            <li class="list-item">Scrolling and Social media are bad (probably a fact not an opinion).</li>
+                        </ul>
+                    </div>
                 </div>
     
                 <div class="my-5">
-                    <h3>interests :</h3>
-                    <ul>
-                        <li>I play chess often, <a href="https://lichess.org/@/Mr_Elyazid" target="_blank">feel free to challenge me anytime</a></li>
-                        <li>I like competitive programming (although I use Python hehe..)</li>
-                        <li>Minecraft is the best videogame in the last 100 years, nothing comes even close</li>
-                        <li>I watch Anime and read manga often</li>
-                        <li>I listen to LOTS of music</li>
-                        <li>Messi</li>
-                    </ul>
+                    <h3 class="h3-header">Intersests : </h3>
+                    <div class="container">
+                        <ul class="list-unstyled">
+                            <li class="list-item">I Like playing Chess a lot, sometimes I play Minecraft or Geometry Dash.</li>
+                            <li class="list-item">I watch Anime and read Manga often.</li>
+                            <li class="list-item">Mathematics.</li>
+                            <li class="list-item">Competitive programming.</li>
+                            <li class="list-item">Music.</li>
+                            <li class="list-item">Coding! (obviously ...).</li>
+                        </ul>
+                    </div>
+
                 </div>
     
                 <div class="my-5">
-                    <h3>Currently :</h3>
-                    <ul>
-                        <li><strong>Focusing on :</strong> Web dev, Laravel and React also AI and Machine Learning</li>
-                    </ul>
+                    <h3 class="h3-header">Currently :</h3>
+                    <div class="container">
+                        <p class="currently">I'm focusing on learning React and React Native, Also diving into AI and Machine Learning, and would really like to improve my chess skills ( but cant find the time! ).</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
     <div class="container text-center mt-5">
-        <h2 class="text-center mb-3">Find me on :</h2>
+        <h2 class="text-right mb-3 find-text">Find me on :</h2>
         <div class="social-links row justify-content-center">
             <div class="social-link col-3">
                 <a href="https://github.com/MrElyazid" class="icon-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
@@ -177,7 +155,7 @@
                 <p>FreeCodeCamp</p>
             </div>
             <div class="social-link col-3">
-                <a href="https://www.freecodecamp.org/MrElyazid" class="icon-link" target="_blank"><i class="fa-brands fas fa-code fa-2x"></i></a>
+                <a href="https://www.sololearn.com/en/profile/18803677" class="icon-link" target="_blank"><i class="fa-brands fas fa-code fa-2x"></i></a>
                 <p>Solo Learn</p>
             </div>
             <div class="social-link col-3">
@@ -185,8 +163,9 @@
                 <p>MyAnimeList</p>
             </div>
         </div>
-    </div>
 
+
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="sketch.js"></script>
 </body>

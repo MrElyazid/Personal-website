@@ -1,0 +1,62 @@
+  
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+        
+        .h3-header {
+            font-family: "Nanum Gothic Coding", monospace;
+            font-weight: 400;
+            font-style: normal;
+            text-decoration: solid;
+        }
+
+        .h3-header ul li {
+            text-decoration: wavy;
+        }
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .custom-img {
+            width: 50%;
+            max-width: 300x;
+            height: auto;
+            opacity: 0.9;
+            border: 2px solid #ccc;
+            border-radius: 50%;
+        }
+
+        .find-text {
+            text-align: left;
+            text-decoration: underline;
+            font-family: "Source Code Pro", monospace;
+            font-weight: bold;
+
+        }
+
+        @media (min-width: 768px) {
+            .custom-img {
+                max-width: 400px; 
+            }
+        }
+
+        #whoami {
+            font-family: "Source Code Pro", monospace;
+            font-weight: bolder;
+        }
+
+        #whoami p {
+            text-align: left;
+        }

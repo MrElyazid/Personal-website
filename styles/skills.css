@@ -6,6 +6,7 @@ body, html {
     font-weight: 600;
 }
 
+
 #particle-canvas {
     position: fixed;
     top: 0;
@@ -16,41 +17,41 @@ body, html {
 }
 
 
+.container {
+    background-color: #f8f9fa;
+    border-radius: .375rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    opacity: 0.85;
+}
+h3 {
+    font-weight: bold;
+    color: #3998a8;
+}
+h4 {
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #000000;
+}
+p {
+    font-size: 1.1rem;
+}
+.list-unstyled {
+    padding-left: 1.2rem;
+}
+.list-unstyled li {
+    margin-bottom: .5rem;
+}
+
+.list-unstyled li span {
+    color: #1c53d3;
+}
+
+
+
 @media (min-width: 768px) {
 .table-responsive {
     max-width: 900px; 
     margin: auto;
 }
 }
-
-
-.container {
-padding: 2rem;
-}
-
-h2, h4 {
-    font-weight: bold;
-    color: #000000;
-}
-
-p {
-    font-size: 1.1rem;
-}
-
-ul {
-    padding-left: 1.2rem;
-}
-
-.list-unstyled li {
-    margin-bottom: .5rem;
-}
-
-.list-unstyled li a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.list-unstyled li a:hover {
-    text-decoration: underline;
-}
-
