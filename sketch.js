@@ -4,11 +4,14 @@ function setup() {
     const canvas = createCanvas(windowWidth, windowHeight);
     canvas.id('particle-canvas');
     canvas.style('z-index', '-1');
-    frameRate(30); 
-    for (let i = 0; i < 60; i++) {
+    frameRate(30);
+
+    let numParticles = windowWidth > 768 ? 60 : 40;
+    for (let i = 0; i < numParticles; i++) {
         particles.push(new Particle());
     }
 }
+
 
 function draw() {
     background(240); 

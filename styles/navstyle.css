@@ -29,3 +29,11 @@
     text-decoration: underline;
     
 }
+
+
+/* Remove the default focus outline */
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
