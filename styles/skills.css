@@ -55,3 +55,9 @@ p {
     margin: auto;
 }
 }
+
+
+.btn {
+    outline: none;
+    box-shadow: none;
+}

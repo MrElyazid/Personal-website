@@ -6,7 +6,7 @@ function setup() {
     canvas.style('z-index', '-1');
     frameRate(30);
 
-    let numParticles = windowWidth > 768 ? 60 : 40;
+    let numParticles = windowWidth > 768 ? 60 : 40; // less particles on small screens
     for (let i = 0; i < numParticles; i++) {
         particles.push(new Particle());
     }
