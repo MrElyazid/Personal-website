@@ -17,7 +17,7 @@ body, html {
 }
 
 
-.container {
+#container {
     background-color: #f8f9fa;
     border-radius: .375rem;
     padding: 2rem;
@@ -61,3 +61,11 @@ p {
     outline: none;
     box-shadow: none;
 }
+
+
+.card {
+    transition: transform 0.3s;
+}
+
+
+
