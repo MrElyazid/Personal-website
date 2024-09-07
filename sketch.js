@@ -1,4 +1,7 @@
 let particles = [];
+let numParticles
+
+
 
 function setup() {
     const canvas = createCanvas(windowWidth, windowHeight);
@@ -6,9 +9,16 @@ function setup() {
     canvas.style('z-index', '-1');
     frameRate(30);
 
-    let numParticles = windowWidth > 768 ? 60 : 40; // less particles on small screens
+    numParticles = windowWidth > 768 ? 60 : 40; // less particles on small screens
     for (let i = 0; i < numParticles; i++) {
         particles.push(new Particle());
+    }
+}
+
+
+function mousePressed(){
+    if (mouseButton === LEFT && numParticles < 100) {
+        particles.push(new Particle(createVector(mouseX, mouseY)))
     }
 }
 
@@ -23,10 +33,10 @@ function draw() {
 }
 
 class Particle {
-    constructor() {
-        this.pos = createVector(random(width), random(height));
+    constructor(pos = createVector(random(width), random(height))) {
+        this.pos = pos;
         this.vel = createVector(random(-1, 1), random(-1, 1));
-        this.size = random(4, 10);
+        this.size = random(6, 13);
         this.colorOffset = random(0, 255); 
     }
 

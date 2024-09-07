@@ -5,7 +5,6 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
-
         .h3-header {
             font-family: "Nanum Gothic Coding", monospace;
             font-weight: 400;
@@ -13,9 +12,13 @@
             text-decoration: solid;
         }
 
+
+
         .h3-header ul li {
             text-decoration: wavy;
         }
+
+
         body, html {
             margin: 0;
             padding: 0;
@@ -35,11 +38,13 @@
         .custom-img {
             width: 50%;
             max-width: 300x;
+            max-height: 450px;
             height: auto;
-            opacity: 0.83;
+            opacity: 0.78;
             border: 2px solid #ccc;
             border-radius: 50%;
         }
+
 
         .find-text {
             text-align: left;
@@ -48,6 +53,7 @@
             font-weight: bold;
 
         }
+
 
         @media (min-width: 768px) {
             .custom-img {
@@ -64,6 +70,7 @@
             text-align: left;
         }
 
+
         .iframe-container {
             width: 100%; 
             max-width: 500px; 
@@ -73,6 +80,7 @@
             height: 100%;
         }
         
+
         .iframe-container iframe {
             width: 100%;
             height: 500px;
@@ -80,18 +88,17 @@
             opacity: 0.9;
         }
 
+
         .puzzle-text {
             font-family: 'Roboto', sans-serif;
             font-size: 2rem;
             color: #333;
-            text-shadow: 2px 2px 4px rgba(162, 219, 255, 0.5);
             letter-spacing: 1px;
-            border-bottom: 2px solid #a0d3f1;
             padding-bottom: 5px;
             margin-right: 20px;
-            }
-        
 
+        }
+        
         .social-link p {
             text-align: center;
             font-size: small;
