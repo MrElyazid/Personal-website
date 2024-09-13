@@ -19,6 +19,7 @@ function setup() {
 function mousePressed(){
     if (mouseButton === LEFT && numParticles < 100) {
         particles.push(new Particle(createVector(mouseX, mouseY)))
+        numParticles++
     }
 }
 
@@ -36,7 +37,7 @@ class Particle {
     constructor(pos = createVector(random(width), random(height))) {
         this.pos = pos;
         this.vel = createVector(random(-1, 1), random(-1, 1));
-        this.size = random(6, 13);
+        this.size = random(3, 10);
         this.colorOffset = random(0, 255); 
     }
 
