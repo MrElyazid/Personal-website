@@ -43,7 +43,7 @@ p {
     margin-bottom: .5rem;
 }
 
-.list-unstyled li span {
+ span {
     color: #1c53d3;
 }
 
@@ -66,6 +66,3 @@ p {
 .card {
     transition: transform 0.3s;
 }
-
-
-
