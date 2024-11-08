@@ -171,13 +171,17 @@
             </div>
 
         </div>
-
-        <div class="container text-center mt-5 iframe-container">
-            <h2 class="text-right my-3 puzzle-text">Free puzzle for you :</h2>
-            <iframe src="https://lichess.org/training/frame?theme=blue&bg=light" allowtransparency="true"></iframe>
+        <div class="d-flex justify-content-center align-items-center flex-column mt-5" style="padding-bottom: 7%">
+            <h2 class="text-center my-3 puzzle-text">Free puzzle for you:</h2>
+            <div class="iframe-container d-flex justify-content-center align-items-center ratio ratio-1x1" style="width: 100%; max-width: 450px; max-height: 500px; height: 100%; position: relative; padding-bottom: 7%;">
+                <iframe 
+                    src="https://lichess.org/training/frame?theme=blue&bg=dark" 
+                    allowtransparency="true" 
+                    style="position: absolute; top: 0; left: 0;" class="iframe ratio ratio-1x1">
+                </iframe>
+            </div>
         </div>
-
-     
+        
 </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
