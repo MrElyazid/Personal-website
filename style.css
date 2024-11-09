@@ -38,9 +38,11 @@
             max-width: 300x;
             max-height: 450px;
             height: auto;
-            opacity: 0.80;
+            opacity: 0.85;
             border: 2px solid #ccc;
             border-radius: 50%;
+            object-fit: cover;
+            aspect-ratio: 1/1;
         }
 
         .find-text {
