@@ -15,12 +15,11 @@
 </head>
 <body>
     
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24" class="d-inline-block align-text-top">
-                Elyazid's Portfolio
+                <span id="nav-portfolio">Elyazid's Portfolio</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,28 +29,37 @@
                     <li class="nav-item">
                         <div class="nav-link-container">
                             <i class="fas fa-home"></i>
-                            <a class="nav-link active" aria-current="page" href="#"> Home</a>
+                            <a class="nav-link active" aria-current="page" href="#" id="nav-home"> Home</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="nav-link-container">
                             <i class="fas fa-user"></i>
-                            <a class="nav-link" href="pages/about.html"> About</a>
+                            <a class="nav-link" href="pages/about.html" id="nav-about"> About</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="nav-link-container">
                             <i class="fas fa-tasks"></i>
-                            <a class="nav-link" href="pages/skills.html"> Skills</a>
+                            <a class="nav-link" href="pages/skills.html" id="nav-skills"> Skills</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <div class="nav-link-container">
                             <i class="fas fa-envelope"></i>
-                            <a class="nav-link" href="pages/contact.html"> Contact</a>
+                            <a class="nav-link" href="pages/contact.html" id="nav-contact"> Contact</a>
                         </div>
                     </li>
                 </ul>
+
+                <!-- <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <select id="language-selector" class="form-select">
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                        </select>
+                    </li>
+                </ul> -->
             </div>
         </div>
     </nav>
@@ -59,12 +67,12 @@
     <div class="container">
         <div class="row justify-content-center align-items-center">
             <div class="col-12 col-md-6 text-center mt-5 img-container">
-                <img src="assets/photo_costume3.png" class="img-thumbnail custom-img ratio-1x1" alt="Essoly Elyazid">
+                <img src="assets/photo.JPG" class="img-thumbnail custom-img ratio-1x1" alt="Essoly Elyazid">
             </div>
 
             <div class="col-12 col-md-6 text-center mt-5">
                 <h3 id="whoami">$whoami : </h3>
-                <p style="text-align: left;">
+                <p id="intro" style="text-align: center;">
                     Essoly Elyazid, 20 years old, from Casablanca Morocco, I study computer science at <abbr title="Ecole Nationale des sciences appliquées"><a href="https://ensa.uit.ac.ma/"  target="_blank">ENSAK</a></abbr>.
                 </p>
             </div>
@@ -75,41 +83,40 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="my-5">
-                    <h3 class="h3-header">Opinions : <h6>Best way to know someone!</h6></h3>
+                    <h3 class="h3-header" id="opinions-title">Opinions : <h6 id="opinions-subtitle">Best way to know someone!</h6></h3>
                     <div class="container">
                         <ul class="list-unstyled">
-                            <li class="list-item">Messi is far better than Ronaldo.</li>
-                            <li class="list-item">Minecraft is the best videogame.</li>
-                            <li class="list-item">Lichess is better than chess.com.</li>
-                            <li class="list-item">
+                            <li class="list-item" id="opinion-1">Messi is far better than Ronaldo.</li>
+                            <li class="list-item" id="opinion-2">Minecraft is the best videogame.</li>
+                            <li class="list-item" id="opinion-3">Lichess is better than chess.com.</li>
+                            <li class="list-item" id="opinion-4">
                             <a href="https://en.wikipedia.org/wiki/Harira" target="_blank">Harira</a> is the pinnacle of Moroccan cuisine.
                             </li>
-                            <li class="list-item">Linkin Park are underrated.</li>
-                            <li class="list-item">Obsidian is better than Notion.</li>
-                            <li class="list-item">Scrolling and Social media are bad.</li>
+                            <li class="list-item" id="opinion-5">Linkin Park are underrated.</li>
+                            <li class="list-item" id="opinion-6">Obsidian is better than Notion.</li>
+                            <li class="list-item" id="opinion-7">Scrolling and Social media are bad.</li>
                         </ul>
                     </div>
                 </div>
     
                 <div class="my-5">
-                    <h3 class="h3-header">Interests : </h3>
+                    <h3 class="h3-header" id="interests-title">Interests : </h3>
                     <div class="container">
                         <ul class="list-unstyled">
-                            <li class="list-item">I Like playing Chess, sometimes I play Minecraft or Geometry Dash.</li>
-                            <li class="list-item">I watch Anime and read Manga often.</li>
-                            <li class="list-item">Mathematics.</li>
-                            <li class="list-item">Competitive programming.</li>
-                            <li class="list-item">Music.</li>
-                            <li class="list-item">Coding! (obviously ...).</li>
+                            <li class="list-item" id="interest-1">I Like playing Chess, sometimes I play Minecraft or Geometry Dash.</li>
+                            <li class="list-item" id="interest-2">I watch Anime and read Manga often.</li>
+                            <li class="list-item" id="interest-3">Mathematics.</li>
+                            <li class="list-item" id="interest-4">Competitive programming.</li>
+                            <li class="list-item" id="interest-5">Music.</li>
+                            <li class="list-item" id="interest-6">Coding! (obviously ...).</li>
                         </ul>
                     </div>
-
                 </div>
     
                 <div class="my-5">
-                    <h3 class="h3-header">Currently :</h3>
+                    <h3 class="h3-header" id="currently-title">Currently :</h3>
                     <div class="container">
-                        <p class="currently">I'm focusing on learning Vue.js, some DSA and Data science, and would really like to improve my chess skills if i get the time.</p>
+                        <p class="currently" id="currently-text">I'm focusing on learning Vue.js, some DSA and Data science, and would really like to improve my chess skills if i get the time.</p>
                     </div>
                 </div>
             </div>
@@ -117,7 +124,7 @@
     </div>
     
     <div class="container text-center mt-5">
-        <h2 class="text-right mb-3 find-text">Find me on :</h2>
+        <h2 class="text-right mb-3 find-text" id="find-me">Find me on :</h2>
         <div class="social-links row justify-content-center">
             <div class="social-link col-3">
                 <a href="https://github.com/MrElyazid" class="icon-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
@@ -187,6 +194,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="sketch.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>

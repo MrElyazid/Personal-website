@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-
-
 .nav-link {
     text-transform: capitalize;
     font-family: "Roboto Mono", monospace;
     font-size: larger;
-
-
 }
 
 .nav-link-container {
@@ -30,9 +26,13 @@
     
 }
 
-
-/* Remove the default focus outline */
 .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+#language-selector {
     outline: none;
     box-shadow: none;
 }

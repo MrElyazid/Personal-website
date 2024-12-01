@@ -11,69 +11,73 @@
     <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <link rel="stylesheet" href="../styles/contact_style.css">
-
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/LegendaryCat.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Elyazid's Portfolio
+                <span id="nav-portfolio">Elyazid's Portfolio</span>
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-
                 <li class="nav-item">
                     <div class="nav-link-container">
                       <i class="fas fa-home"></i>
-                      <a class="nav-link" aria-current="page" href="../index.html"> Home</a>
+                      <a class="nav-link" aria-current="page" href="../index.html" id="nav-home"> Home</a>
                     </div>
-                  </li>
-
-              <li class="nav-item">
-                <div class="nav-link-container">
-                  <i class="fas fa-user"></i>
-                  <a class="nav-link" href="about.html"> About</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="nav-link-container">
-                  <i class="fas fa-tasks"></i>
-                  <a class="nav-link" href="skills.html"> Skills</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="nav-link-container">
-                  <i class="fas fa-envelope"></i>
-                  <a class="nav-link active" href="#"> Contact</a>
-                </div>
-              </li>
-              
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link-container">
+                      <i class="fas fa-user"></i>
+                      <a class="nav-link" href="about.html" id="nav-about"> About</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link-container">
+                      <i class="fas fa-tasks"></i>
+                      <a class="nav-link" href="skills.html" id="nav-skills"> Skills</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link-container">
+                      <i class="fas fa-envelope"></i>
+                      <a class="nav-link active" href="#" id="nav-contact"> Contact</a>
+                    </div>
+                </li>
             </ul>
+
+            <!-- <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <select id="language-selector" class="form-select">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
+            </ul> -->
+            
           </div>
         </div>
-      </nav>
+    </nav>
 
-      <div class="container">
+    <div class="container">
         <div class="row justify-content-center mt-5 contact-div">
             <div class="col-md-8">
                 <div class="contact-info">
-                    <h5>You can reach me through:</h5>
-                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:elyazid.assouli@gmail.com">elyazid.assouli@gmail.com</a></p>
-                    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/elyazid-essoly-2bb6062b8/" target="_blank">My profile</a></p>
-                    <p><i class="fab fa-discord"></i> Discord: Elyazid#6218</p>
+                    <h5 id="contact-title">You can reach me through:</h5>
+                    <p><i class="fas fa-envelope"></i> <span id="contact-email">Email:</span> <a href="mailto:elyazid.assouli@gmail.com">elyazid.assouli@gmail.com</a></p>
+                    <p><i class="fab fa-linkedin"></i> <span id="contact-linkedin">LinkedIn:</span> <a href="https://www.linkedin.com/in/elyazid-essoly-2bb6062b8/" target="_blank">My profile</a></p>
+                    <p><i class="fab fa-discord"></i> <span id="contact-discord">Discord:</span> Elyazid#6218</p>
                 </div>
             </div>
         </div>
     </div>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="../sketch.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../sketch.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

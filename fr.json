@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "portfolio": "Portfolio d'Elyazid"
+  },
+  "home": {
+    "whoami": "$whoami :",
+    "intro": "Essoly Elyazid, 20 ans, de Casablanca Maroc, j'étudie l'informatique à l'ENSAK.",
+    "opinions": {
+      "title": "Opinions :",
+      "subtitle": "La meilleure façon de connaître quelqu'un !",
+      "items": [
+        "Messi est bien meilleur que Ronaldo.",
+        "Minecraft est le meilleur jeu vidéo.",
+        "Lichess est meilleur que chess.com.",
+        "La Harira est le summum de la cuisine marocaine.",
+        "Linkin Park est sous-estimé.",
+        "Obsidian est meilleur que Notion.",
+        "Le défilement et les réseaux sociaux sont mauvais."
+      ]
+    },
+    "interests": {
+      "title": "Centres d'intérêt :",
+      "items": [
+        "J'aime jouer aux échecs, parfois je joue à Minecraft ou Geometry Dash.",
+        "Je regarde des Animes et lis des Mangas souvent.",
+        "Les mathématiques.",
+        "La programmation compétitive.",
+        "La musique.",
+        "Le code ! (évidemment...)."
+      ]
+    },
+    "currently": {
+      "title": "Actuellement :",
+      "text": "Je me concentre sur l'apprentissage de Vue.js, des structures de données et algorithmes, et de la science des données. J'aimerais aussi améliorer mon niveau aux échecs si j'en ai le temps."
+    },
+    "findMe": "Retrouvez-moi sur :"
+  },
+  "about": {
+    "education": {
+      "title": "Mon Éducation :",
+      "headers": {
+        "location": "Établissement",
+        "time": "Période",
+        "comment": "Commentaire"
+      },
+      "schools": [
+        {
+          "name": "École Nationale des sciences appliquées de Kénitra",
+          "period": "2023 - présent",
+          "comment": "Je profite de mon temps... jusqu'ici"
+        },
+        {
+          "name": "École Nationale des sciences appliquées de Tétouan",
+          "period": "2021 - 2023",
+          "comment": "Le Nord a de beaux paysages"
+        },
+        {
+          "name": "Lycée Hassan Ibn Tabit",
+          "period": "2018 - 2021",
+          "comment": "Période embarrassante"
+        }
+      ]
+    },
+    "personalities": {
+      "title": "Personnalités que j'apprécie :",
+      "chess": "Joueurs d'échecs :",
+      "programmers": "Programmeurs :"
+    },
+    "chess": {
+      "title": "Ouvertures d'échecs préférées :",
+      "intro": "Je ne connais pas encore la théorie des ouvertures en profondeur mais :",
+      "items": [
+        "Je n'aime pas d4, et je joue généralement une défense gambit de la dame refusée ou une variante de la défense est-indienne contre.",
+        "Contre e4, je joue habituellement la Caro-Kann, la défense sicilienne, et parfois e5.",
+        "En blancs, 95% de mes parties commencent par e4, puis dévient vers une variante Ruy Lopez ou italienne si les noirs répondent e5."
+      ]
+    },
+    "additional": {
+      "title": "Informations supplémentaires :",
+      "items": [
+        "Je suis assez mauvais au football, pas catastrophique, mais disons normalement mauvais.",
+        "J'aime expérimenter avec les LLMs.",
+        "J'avais un hobby d'élever des pigeons quand j'étais enfant.",
+        "C'est ce qui me vient à l'esprit pour le moment."
+      ]
+    }
+  },
+  "skills": {
+    "mainTitle": "Compétences :",
+    "programming": {
+      "title": "Langages de programmation :",
+      "good": "Bon niveau :",
+      "intermediate": "Niveau intermédiaire :",
+      "knowledge": "Connaissances en :"
+    },
+    "webdev": {
+      "title": "Développement Web :",
+      "intro": "Je connais les bases de html, css, PHP et JS. Pour les frameworks et bibliothèques web :",
+      "frontend": "Frontend : apprentissage de Vue.js et Nuxt.",
+      "backend": "Backend : Laravel, Flask et intéressé par Django.",
+      "databases": "Bases de données : MariaDB, MongoDB.",
+      "css": "Bibliothèques CSS : Bootstrap et Tailwind CSS, pour les petits projets Pico CSS.",
+      "baas": "BaaS : Firebase",
+      "other": "J'ai aussi travaillé avec d'autres technologies comme React et React Native via Expo pour le développement mobile."
+    },
+    "devops": {
+      "title": "DevOps :",
+      "text": "DevOps et le développement Web Fullstack sont les deux domaines principaux qui m'intéressent actuellement. Bien que je n'aie qu'une connaissance minimale des outils comme NGINX, Docker et Gitlab, je vais certainement approfondir ce domaine quand j'en aurai l'occasion."
+    },
+    "datascience": {
+      "title": "Science des données :",
+      "text": "Bases de : Pandas, Numpy, Matplotlib et Seaborn."
+    },
+    "gui": {
+      "title": "Développement d'interfaces graphiques :",
+      "text": "J'ai travaillé avec Python Tkinter et Pygame, et je prévois de voir Electron ou PyQt à l'avenir."
+    },
+    "graphics": {
+      "title": "Graphisme et Programmation créative :",
+      "text": "J'aime le projet Processing, et je suis un grand fan de P5.js."
+    },
+    "ai": {
+      "title": "IA et ML :",
+      "text": "Pas encore beaucoup mais je prévois d'avoir des connaissances minimales en : TensorFlow et Scikit-learn."
+    },
+    "misc": {
+      "title": "Divers :",
+      "text": "Les autres technologies que je connais incluent : Git pour le contrôle de version, les commandes de base Linux et Bash Scripting, UML pour la conception de logiciels et de systèmes, et bien plus encore..."
+    },
+    "certificates": {
+      "title": "Certificats :",
+      "intro": "Je ne crois pas en l'évaluation des compétences à travers des certificats ou des tutoriels, mais si vous y croyez (ou si vous êtes un employeur) alors :"
+    },
+    "achievements": {
+      "title": "Autres réalisations :",
+      "codewars": "Atteinte du niveau 4 kyu sur codewars, Top 3% mondial."
+    },
+    "resume": {
+      "title": "Télécharger mon CV",
+      "button": "Télécharger CV",
+      "downloading": "Téléchargement...",
+      "error": "Erreur : Le CV s'est enfui. Dernière fois vu en direction d'Hawaï. Bon sérieusement, j'en ferai un bon plus tard, l'actuel n'est pas terrible."
+    }
+  },
+  "contact": {
+    "title": "Vous pouvez me joindre via :",
+    "email": "Email :",
+    "linkedin": "LinkedIn :",
+    "discord": "Discord :"
+  }
+}

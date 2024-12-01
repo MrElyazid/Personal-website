@@ -11,132 +11,128 @@
     <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <link rel="stylesheet" href="../styles/skills.css">
-
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24" class="d-inline-block align-text-top">
-                Elyazid's Portfolio
+                <span id="nav-portfolio">Elyazid's Portfolio</span>
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-
                 <li class="nav-item">
                     <div class="nav-link-container">
                       <i class="fas fa-home"></i>
-                      <a class="nav-link" aria-current="page" href="../index.html"> Home</a>
+                      <a class="nav-link" aria-current="page" href="../index.html" id="nav-home"> Home</a>
                     </div>
-                  </li>
-
-              <li class="nav-item">
-                <div class="nav-link-container">
-                  <i class="fas fa-user"></i>
-                  <a class="nav-link" href="about.html"> About</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="nav-link-container">
-                  <i class="fas fa-tasks"></i>
-                  <a class="nav-link active" href="#"> Skills</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <div class="nav-link-container">
-                  <i class="fas fa-envelope"></i>
-                  <a class="nav-link" href="contact.html"> Contact</a>
-                </div>
-              </li>
-              
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link-container">
+                      <i class="fas fa-user"></i>
+                      <a class="nav-link" href="about.html" id="nav-about"> About</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link-container">
+                      <i class="fas fa-tasks"></i>
+                      <a class="nav-link active" href="#" id="nav-skills"> Skills</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-link-container">
+                      <i class="fas fa-envelope"></i>
+                      <a class="nav-link" href="contact.html" id="nav-contact"> Contact</a>
+                    </div>
+                </li>
             </ul>
+
+            <!-- <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <select id="language-selector" class="form-select">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </li>
+            </ul> -->
+
           </div>
         </div>
-      </nav>
+    </nav>
 
-      <div class="container my-5" id="container">
-        <h3 class="mb-4">Skills : </h3>
+    <div class="container my-5" id="container">
+        <h3 class="mb-4" id="skills-maintitle">Skills : </h3>
         
         <div class="my-5">
-            <h4>- Programming Languages : </h4>
+            <h4 id="programming-title">- Programming Languages : </h4>
             <ul class="list-unstyled">
-                <li>Good at: <span>Python</span>.</li>
-                <li>Intermediate at: <span>JavaScript</span>.</li>
-                <li>Have knowledge in: <span>C, C++, PHP, R</span>.</li>
+                <li id="programming-good">Good at: <span>Python</span>.</li>
+                <li id="programming-intermediate">Intermediate at: <span>JavaScript</span>.</li>
+                <li id="programming-knowledge">Have knowledge in: <span>C, C++, PHP, R</span>.</li>
             </ul>
         </div>
     
         <div class="my-5">
-            <h4>- Web Dev : </h4>
-            <p>I know the basics html, css, PHP and JS. For web frameworks and libraries :</p>
+            <h4 id="webdev-title">- Web Dev : </h4>
+            <p id="webdev-intro">I know the basics html, css, PHP and JS. For web frameworks and libraries :</p>
             <ul class="list-unstyled">
-                <li>Frontend: learning <span>Vue.js</span> and <span>Nuxt</span>.</li>
-                <li>Backend: <span>Laravel</span>, <span>Flask</span> and Interested in <span>Django</span>.</li>
-                <li>Databases: <span>MariaDB</span>, <span>MongoDB</span>.</li>
-                <li>CSS Libraries : <span>Bootstrap</span> and <span>Tailwind CSS</span>, for small projects <span>Pico CSS</span>.</li>
-                <li>BaaS: <span>Firebase</span></li>
+                <li id="webdev-frontend">Frontend: learning <span>Vue.js</span> and <span>Nuxt</span>.</li>
+                <li id="webdev-backend">Backend: <span>Laravel</span>, <span>Flask</span> and Interested in <span>Django</span>.</li>
+                <li id="webdev-databases">Databases: <span>MariaDB</span>, <span>MongoDB</span>.</li>
+                <li id="webdev-css">CSS Libraries : <span>Bootstrap</span> and <span>Tailwind CSS</span>, for small projects <span>Pico CSS</span>.</li>
+                <li id="webdev-baas">BaaS: <span>Firebase</span></li>
             </ul>
-            <p>I also worked with other technologies like <span>React</span> and <span>React Native</span> via <span>Expo</span> for Mobile dev.</p>
+            <p id="webdev-other">I also worked with other technologies like <span>React</span> and <span>React Native</span> via <span>Expo</span> for Mobile dev.</p>
         </div>
     
         <div class="my-5">
-          <h4>- DevOps : </h4>
-          <ul class="list-unstyled">
-            <li>DevOps and Fullstack Web Development are the two main fields im currently interested in, although i only have minimal knowledge of tools like <span>NGINX</span>, <span>Docker</span> and <span>Gitlab</span> im definitely going to dive deeper into this field when i get the chance.
-            </li>
-          </ul>
+            <h4 id="devops-title">- DevOps : </h4>
+            <ul class="list-unstyled">
+                <li id="devops-text">DevOps and Fullstack Web Development are the two main fields im currently interested in, although i only have minimal knowledge of tools like <span>NGINX</span>, <span>Docker</span> and <span>Gitlab</span> im definitely going to dive deeper into this field when i get the chance.</li>
+            </ul>
         </div>
 
-
         <div class="my-5">
-          <h4>- Data Science : </h4>
-          <ul class="list-unstyled">
-              <li>Basics of : <span>Pandas</span>, <span>Numpy</span>, <span>Matplotlib</span> and <span>Seaborn</span>.</li>
-          </ul>
-      </div>
-
-
-        <div class="my-5">
-            <h4>- GUI Development : </h4>
+            <h4 id="datascience-title">- Data Science : </h4>
             <ul class="list-unstyled">
-                <li>I worked with Python <span>Tkinter</span> and <span>Pygame</span>, and planning on seeing <span>Electron</span> or <span>PyQt</span> in the future.</li>
+                <li id="datascience-text">Basics of : <span>Pandas</span>, <span>Numpy</span>, <span>Matplotlib</span> and <span>Seaborn</span>.</li>
+            </ul>
+        </div>
+
+        <div class="my-5">
+            <h4 id="gui-title">- GUI Development : </h4>
+            <ul class="list-unstyled">
+                <li id="gui-text">I worked with Python <span>Tkinter</span> and <span>Pygame</span>, and planning on seeing <span>Electron</span> or <span>PyQt</span> in the future.</li>
             </ul>
         </div>
     
-
         <div class="my-5">
-            <h4>- Graphics and Creative Coding : </h4>
+            <h4 id="graphics-title">- Graphics and Creative Coding : </h4>
             <ul class="list-unstyled">
-                <li>I like the Processing project, and a big fan of <span>P5.js</span>.</li>
+                <li id="graphics-text">I like the Processing project, and a big fan of <span>P5.js</span>.</li>
             </ul>
         </div>
     
-
         <div class="my-5">
-          <h4>- AI and ML : </h4>
-          <ul class="list-unstyled">
-              <li>Not much yet but planning on having minimal knowledge for : <span>TensorFlow</span>, and <span>Scikit-learn</span>.</li>
-          </ul>
-      </div>
-
-
-      <div class="my-5">
-            <h4>- Misc : </h4>
+            <h4 id="ai-title">- AI and ML : </h4>
             <ul class="list-unstyled">
-                <li>Other technologies I know about include: <span>Git</span> for version control, Basic <span>Linux</span> and <span>Bash Scripting</span> commands, <span>UML</span> for software and system design, and much more...</li>
+                <li id="ai-text">Not much yet but planning on having minimal knowledge for : <span>TensorFlow</span>, and <span>Scikit-learn</span>.</li>
             </ul>
         </div>
 
+        <div class="my-5">
+            <h4 id="misc-title">- Misc : </h4>
+            <ul class="list-unstyled">
+                <li id="misc-text">Other technologies I know about include: <span>Git</span> for version control, Basic <span>Linux</span> and <span>Bash Scripting</span> commands, <span>UML</span> for software and system design, and much more...</li>
+            </ul>
+        </div>
 
-        <h3 class="mb-4">Online presence and Accomplishments on platforms :</h3>
-        <p>I dont believe in the evaluation of skills through certificates or completing tutorials, in case you do, ( or if you're an employer ) then :</p>
+        <h3 class="mb-4" id="online-presence-title">Online presence and Accomplishments on platforms :</h3>
+        <p id="certificates-intro">I dont believe in the evaluation of skills through certificates or completing tutorials, in case you do, ( or if you're an employer ) then :</p>
 
-        
         <div class="container my-5">
           <h3 class="mb-4">Certificates:</h3>
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
@@ -198,50 +194,48 @@
           </div>
         </div>
         
-        
-    <div class="container my-5">
-        <h3 class="mb-4">Other Acheivements :</h3>
-        <li>Reaching 4 kyu on <a href="https://www.codewars.com/users/MrElyazid" target="_blank" rel="noopener noreferrer">codewars</a>, Top 3% worldwide .</li>
+        <div class="container my-5">
+            <h3 class="mb-4" id="achievements-title">Other Acheivements :</h3>
+            <li id="codewars-achievement">Reaching 4 kyu on <a href="https://www.codewars.com/users/MrElyazid" target="_blank" rel="noopener noreferrer">codewars</a>, Top 3% worldwide .</li>
+        </div>
+
+        <div class="my-5 text-center">
+            <h2 class="mb-4" id="resume-title">Download My Resume</h2>
+            <button class="btn btn-primary btn-lg" onclick="fakeDownload()" id="resume-button">
+                <i class="fas fa-download"></i> Download Resume
+            </button>
+        </div>
+
+        <div id="loadingBar" style="display: none;">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+            </div>
+            <p id="loading-text">Downloading...</p>
+            <p id="error-text" style="display: none;">Error: Resume ran away. Last seen heading to Hawaii. Ok seriously, gonna make a good one later, the current one sucks.</p>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../sketch.js"></script>
+    <script src="../script.js"></script>
 
-    <div class="my-5 text-center">
-      <h2 class="mb-4">Download My Resume</h2>
-      <button class="btn btn-primary btn-lg" onclick="fakeDownload()">
-        <i class="fas fa-download"></i> Download Resume
-      </button>
-  </div>
-
-
-  <div id="loadingBar" style="display: none;">
-    <div class="progress">
-      <div class="progress-bar" role="progressbar" style="width: 0%"></div>
-    </div>
-    <p id="loadingText">Downloading...</p>
-  </div>
-
-    </div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="../sketch.js"></script>
-
-<script>
-
-function fakeDownload() {
-  document.getElementById('loadingBar').style.display = 'block';
-  var width = 0;
-  var interval = setInterval(function() {
-    if (width >= 100) {
-      clearInterval(interval);
-      document.getElementById('loadingText').innerHTML = "Error: Resume ran away. Last seen heading to Hawaii. Ok seriously, gonna make a good one later, the current one sucks.";
-    } else {
-      width+=5;
-      document.querySelector('.progress-bar').style.width = width + '%';
+    <script>
+    function fakeDownload() {
+        document.getElementById('loadingBar').style.display = 'block';
+        document.getElementById('loading-text').style.display = 'block';
+        document.getElementById('error-text').style.display = 'none';
+        var width = 0;
+        var interval = setInterval(function() {
+            if (width >= 100) {
+                clearInterval(interval);
+                document.getElementById('loading-text').style.display = 'none';
+                document.getElementById('error-text').style.display = 'block';
+            } else {
+                width+=5;
+                document.querySelector('.progress-bar').style.width = width + '%';
+            }
+        }, 50);
     }
-  }, 50);
-}
-
-</script>
+    </script>
 </body>
 </html>
