@@ -2,7 +2,6 @@
 // there is probably another good way to do this but who cares as long as this one is working
 
 
-
 function getCurrentPage() {
     const path = window.location.pathname;
     if (path.includes('/pages/about.html')) return 'about';
@@ -13,14 +12,14 @@ function getCurrentPage() {
 
 
 const elements = {
-    // Navigation (common to all pages)
+    
     navPortfolio: document.getElementById('nav-portfolio'),
     navHome: document.getElementById('nav-home'),
     navAbout: document.getElementById('nav-about'),
     navSkills: document.getElementById('nav-skills'),
     navContact: document.getElementById('nav-contact'),
     
-    // Home page elements
+    
     home: {
         whoami: document.getElementById('whoami'),
         intro: document.getElementById('intro'),
@@ -34,7 +33,7 @@ const elements = {
         findMe: document.getElementById('find-me')
     },
 
-    // About page elements
+    
     about: {
         educationTitle: document.getElementById('education-title'),
         educationHeaderLocation: document.getElementById('education-header-location'),
@@ -55,7 +54,7 @@ const elements = {
         additionalItems: Array.from({length: 4}, (_, i) => document.getElementById(`additional-item-${i + 1}`))
     },
 
-    // Skills page elements
+
     skills: {
         mainTitle: document.getElementById('skills-maintitle'),
         programmingTitle: document.getElementById('programming-title'),
@@ -93,7 +92,7 @@ const elements = {
         errorText: document.getElementById('error-text')
     },
 
-    // Contact page elements
+    
     contact: {
         title: document.getElementById('contact-title'),
         email: document.getElementById('contact-email'),
@@ -104,42 +103,6 @@ const elements = {
 
 const languageSelector = document.getElementById('language-selector');
 
-// Function to preserve HTML elements like spans and links while updating text
-function updateTextPreservingElements(element, text, preserveSpans = false) {
-    if (!element) return;
-    
-    // Store existing spans and links
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = element.innerHTML;
-    const spans = preserveSpans ? Array.from(tempDiv.getElementsByTagName('span')) : [];
-    const links = Array.from(tempDiv.getElementsByTagName('a'));
-    
-    // Update the text content
-    element.textContent = text;
-    
-    // Re-insert spans and links
-    if (preserveSpans) {
-        spans.forEach(span => {
-            const spanText = text.split(span.textContent);
-            if (spanText.length > 1) {
-                element.innerHTML = element.innerHTML.replace(
-                    spanText[0] + span.textContent + spanText[1],
-                    spanText[0] + span.outerHTML + spanText[1]
-                );
-            }
-        });
-    }
-    
-    links.forEach(link => {
-        const linkText = text.split(link.textContent);
-        if (linkText.length > 1) {
-            element.innerHTML = element.innerHTML.replace(
-                linkText[0] + link.textContent + linkText[1],
-                linkText[0] + link.outerHTML + linkText[1]
-            );
-        }
-    });
-}
 
 function updateNavigation(data) {
     if (elements.navPortfolio) elements.navPortfolio.textContent = data.nav.portfolio;
@@ -154,20 +117,15 @@ function updateHomePage(data) {
     const home = elements.home;
     if (!home.whoami) return;
 
-    home.whoami.textContent = data.home.whoami;
-    home.intro.textContent = data.home.intro;
+    home.whoami.innerHTML = data.home.whoami;
+    home.intro.innerHTML = data.home.intro;
     
     home.opinionsTitle.textContent = data.home.opinions.title + ' ';
     home.opinionsSubtitle.textContent = data.home.opinions.subtitle;
     home.opinions.forEach((element, index) => {
         if (element) {
             if (index === 3) {
-                const link = element.querySelector('a');
-                if (link) {
-                    element.innerHTML = `<a href="https://en.wikipedia.org/wiki/Harira" target="_blank">Harira</a> ${data.home.opinions.items[index].split('Harira')[1]}`;
-                } else {
-                    element.textContent = data.home.opinions.items[index];
-                }
+                    element.innerHTML = data.home.opinions.items[index];
             } else {
                 element.textContent = data.home.opinions.items[index];
             }
@@ -187,7 +145,7 @@ function updateHomePage(data) {
     home.findMe.textContent = data.home.findMe;
 }
 
-// update about page elements
+
 function updateAboutPage(data) {
     const about = elements.about;
     if (!about.educationTitle) return;
@@ -201,32 +159,15 @@ function updateAboutPage(data) {
         if (school.name && school.period && school.comment) {
             school.name.textContent = data.about.education.schools[index].name;
             school.period.textContent = data.about.education.schools[index].period;
-            school.comment.textContent = data.about.education.schools[index].comment;
+            school.comment.innerHTML = data.about.education.schools[index].comment;
         }
     });
 
     about.personalitiesTitle.textContent = data.about.personalities.title;
-    
-    // Preserve links while updating text for chess players and programmers
-    if (about.chessPlayers) {
-        const chessLinks = Array.from(about.chessPlayers.getElementsByTagName('a'));
-        about.chessPlayers.innerHTML = `${data.about.personalities.chess} `;
-        chessLinks.forEach((link, index) => {
-            about.chessPlayers.appendChild(link);
-            if (index === 0) about.chessPlayers.appendChild(document.createTextNode(', and '));
-            if (index === 1) about.chessPlayers.appendChild(document.createTextNode('.'));
-        });
-    }
+    about.chessPlayers.innerHTML = data.about.personalities.chess;
+    about.programmers.innerHTML = data.about.personalities.programmers;
 
-    if (about.programmers) {
-        const progLinks = Array.from(about.programmers.getElementsByTagName('a'));
-        about.programmers.innerHTML = `${data.about.personalities.programmers} `;
-        progLinks.forEach((link, index) => {
-            about.programmers.appendChild(link);
-            if (index < 2) about.programmers.appendChild(document.createTextNode(', '));
-            if (index === 2) about.programmers.appendChild(document.createTextNode('.'));
-        });
-    }
+
 
     about.chessTitle.textContent = data.about.chess.title;
     about.chessIntro.textContent = data.about.chess.intro;
@@ -240,60 +181,62 @@ function updateAboutPage(data) {
     });
 }
 
-//update skills page elements
 function updateSkillsPage(data) {
     const skills = elements.skills;
     if (!skills.mainTitle) return;
 
     skills.mainTitle.textContent = data.skills.mainTitle;
-    
-    // Programming Languages section
+
+    //programming languages
     skills.programmingTitle.textContent = data.skills.programming.title;
-    updateTextPreservingElements(skills.programmingGood, data.skills.programming.good, true);
-    updateTextPreservingElements(skills.programmingIntermediate, data.skills.programming.intermediate, true);
-    updateTextPreservingElements(skills.programmingKnowledge, data.skills.programming.knowledge, true);
-    
-    // Web Dev section
+    skills.programmingGood.innerHTML = data.skills.programming.good;
+    skills.programmingIntermediate.innerHTML = data.skills.programming.intermediate;
+    skills.programmingKnowledge.innerHTML = data.skills.programming.knowledge;
+
+    //webdev
     skills.webdevTitle.textContent = data.skills.webdev.title;
-    skills.webdevIntro.textContent = data.skills.webdev.intro;
-    updateTextPreservingElements(skills.webdevFrontend, data.skills.webdev.frontend, true);
-    updateTextPreservingElements(skills.webdevBackend, data.skills.webdev.backend, true);
-    updateTextPreservingElements(skills.webdevDatabases, data.skills.webdev.databases, true);
-    updateTextPreservingElements(skills.webdevCss, data.skills.webdev.css, true);
-    updateTextPreservingElements(skills.webdevBaas, data.skills.webdev.baas, true);
-    updateTextPreservingElements(skills.webdevOther, data.skills.webdev.other, true);
+    skills.webdevIntro.innerHTML = data.skills.webdev.intro;
+    skills.webdevFrontend.innerHTML = data.skills.webdev.frontend
+    skills.webdevBackend.innerHTML = data.skills.webdev.backend
+    skills.webdevDatabases.innerHTML = data.skills.webdev.databases
+    skills.webdevCss.innerHTML = data.skills.webdev.css
+    skills.webdevBaas.innerHTML = data.skills.webdev.baas
+    skills.webdevOther.innerHTML = data.skills.webdev.other
     
-    // DevOps section
+    //DevOps
     skills.devopsTitle.textContent = data.skills.devops.title;
-    updateTextPreservingElements(skills.devopsText, data.skills.devops.text, true);
+    skills.devopsText.innerHTML =  data.skills.devops.text;
     
-    // Data Science section
+    //Data Science
     skills.datascienceTitle.textContent = data.skills.datascience.title;
-    updateTextPreservingElements(skills.datascienceText, data.skills.datascience.text, true);
-    
-    // GUI Development section
+    skills.datascienceText.innerHTML = data.skills.datascience.text;
+
+    //GUI and desktop
     skills.guiTitle.textContent = data.skills.gui.title;
-    updateTextPreservingElements(skills.guiText, data.skills.gui.text, true);
+    skills.guiText.innerHTML = data.skills.gui.text;
     
-    // Graphics section
+    //Creative coding
     skills.graphicsTitle.textContent = data.skills.graphics.title;
-    updateTextPreservingElements(skills.graphicsText, data.skills.graphics.text, true);
+    skills.graphicsText.innerHTML = data.skills.graphics.text;
     
-    // AI and ML section
+    //AI and ML
     skills.aiTitle.textContent = data.skills.ai.title;
-    updateTextPreservingElements(skills.aiText, data.skills.ai.text, true);
+    skills.aiText.innerHTML = data.skills.ai.text;
     
-    // Misc section
+    //Misc
     skills.miscTitle.textContent = data.skills.misc.title;
-    updateTextPreservingElements(skills.miscText, data.skills.misc.text, true);
+    skills.miscText.innerHTML = data.skills.misc.text;
     
-    // Certificates and Achievements section
-    skills.certificatesTitle.textContent = data.skills.certificates.title;
-    skills.certificatesIntro.textContent = data.skills.certificates.intro;
+    //online presence
+    skills.onlinePresenceTitle.innerHTML = data.skills.onlinePresence.title;
+
+    //Certificates and Achievements section
+    skills.certificatesTitle.innerHTML = data.skills.certificates.title;
+    skills.certificatesIntro.innerHTML = data.skills.certificates.intro;
     skills.achievementsTitle.textContent = data.skills.achievements.title;
-    updateTextPreservingElements(skills.codewarsAchievement, data.skills.achievements.codewars);
+    skills.codewarsAchievement.innerHTML = data.skills.achievements.codewars;
     
-    // Resume section
+    //Resume section
     skills.resumeTitle.textContent = data.skills.resume.title;
     if (skills.resumeButton) {
         const icon = skills.resumeButton.querySelector('i');
@@ -314,23 +257,34 @@ function updateContactPage(data) {
     contact.discord.textContent = data.contact.discord;
 }
 
-// Function to load and apply translation
+
+
 function loadTranslation(language) {
-    // Save selected language to localStorage
+
     localStorage.setItem('selectedLanguage', language);
     
-    // Update language selector to match stored language
     if (languageSelector) {
         languageSelector.value = language;
+    }
+
+    //if english then just reload
+    if (language === 'en') {
+
+        //avoid an infinite loop
+        if (localStorage.getItem('selectedLanguage') !== null) {
+            localStorage.removeItem('selectedLanguage');
+            location.reload();
+        }
+        return;
     }
 
     fetch(`${window.location.pathname.includes('/pages/') ? '../' : ''}${language}.json`)
         .then(response => response.json())
         .then(data => {
-            // Update navigation (common to all pages)
+            //update navbar text
             updateNavigation(data);
 
-            // Update page-specific content
+            //page-specific content
             const currentPage = getCurrentPage();
             if (currentPage === 'home') {
                 updateHomePage(data);
@@ -345,14 +299,18 @@ function loadTranslation(language) {
         .catch(error => console.error('Error loading translation:', error));
 }
 
-// Event listener for language change
+//apply saved local-storage choice when reloading
+window.addEventListener('load', () => {
+    const savedLanguage = localStorage.getItem('selectedLanguage');
+    if (savedLanguage && savedLanguage !== 'en') {
+        loadTranslation(savedLanguage);
+    }
+});
+
+//main event listener
 if (languageSelector) {
     languageSelector.addEventListener('change', (event) => {
         const selectedLanguage = event.target.value;
         loadTranslation(selectedLanguage);
     });
 }
-
-// Load saved language or default to 'en'
-// const savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
-// loadTranslation(savedLanguage);
