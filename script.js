@@ -127,7 +127,7 @@ function updateHomePage(data) {
             if (index === 3) {
                     element.innerHTML = data.home.opinions.items[index];
             } else {
-                element.textContent = data.home.opinions.items[index];
+                element.innerHTML = data.home.opinions.items[index];
             }
         }
     });

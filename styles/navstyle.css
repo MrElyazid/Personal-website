@@ -37,3 +37,25 @@
     box-shadow: none;
 }
 
+
+.custom-language-selector {
+    
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+
+.custom-language-selector:hover {
+    background-color: #e9ecef;
+    border-color: #bbb;
+}
+
+
+.custom-language-selector:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
