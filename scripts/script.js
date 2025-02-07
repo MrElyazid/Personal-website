@@ -278,7 +278,7 @@ function loadTranslation(language) {
         return;
     }
 
-    fetch(`${window.location.pathname.includes('/pages/') ? '../' : ''}${language}.json`)
+    fetch(`${window.location.pathname.includes('/pages/') ? '../translation/' : 'translation/'}${language}.json`)
         .then(response => response.json())
         .then(data => {
             //update navbar text

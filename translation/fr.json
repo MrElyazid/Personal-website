@@ -23,7 +23,7 @@
     "interests": {
       "title": "Centres d'intérêt :",
       "items": [
-        "J'aime jouer aux échecs, parfois je joue à Minecraft ou Geometry Dash.",
+        "J'aime jouer aux échecs, parfois je joue à Minecraft ou à quleques jeux de rhythme.",
         "Je regarde des Animes et lis des Mangas souvent.",
         "La programmation compétitive.",
         "La musique.",
@@ -97,11 +97,11 @@
     "webdev": {
       "title": "- Développement Web :",
       "intro": "Je connais les bases de <span>html, css, JS, PHP</span>. Pour les frameworks et bibliothèques web :",
-      "frontend": "Frontend : <span>Vue.js</span> et <span>Nuxt.js</span>.",
+      "frontend": "Frontend : <span>Vue.js</span>.",
       "backend": "Backend : <span>Laravel</span>, <span>Flask</span> et <span>Django</span>.",
       "databases": "Bases de données : <span>MariaDB</span>, <span>MongoDB</span>.",
-      "css": "Bibliothèques CSS : <span>Bootstrap</span> et <span>Tailwind CSS</span>.",
-      "baas": "BaaS : <span>Firebase</span>",
+      "css": "Bibliothèques CSS : <span>Bootstrap</span>.",
+      "baas": "BaaS : <span>Firebase</span>.",
       "other": "J'ai aussi travaillé avec d'autres technologies comme <span>React</span>, et <span>React-Native</span> pour le développement mobile."
     },
     "devops": {
