@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills and Projects page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="../styles/skills.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../styles/navstyle.css">
     <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon">
@@ -13,57 +13,53 @@
     <link rel="stylesheet" href="../styles/skills.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24" class="d-inline-block align-text-top">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="../index.html">
+                <img src="../assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24">
                 <span id="nav-portfolio">Elyazid's Portfolio</span>
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <div class="nav-link-container">
-                      <i class="fas fa-home"></i>
-                      <a class="nav-link" aria-current="page" href="../index.html" id="nav-home"> Home</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        
+        <div id="navbarNav" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="../index.html" id="nav-home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a class="navbar-item" href="about.html" id="nav-about">
+                    <i class="fas fa-user"></i>
+                    About
+                </a>
+                <a class="navbar-item active" href="#" id="nav-skills">
+                    <i class="fas fa-tasks"></i>
+                    Skills
+                </a>
+                <a class="navbar-item" href="contact.html" id="nav-contact">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </a>
+            </div>
+            
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="select">
+                        <select id="language-selector">
+                            <option value="en">&#x1F1EC;&#x1F1E7; English</option>
+                            <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
+                        </select>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link-container">
-                      <i class="fas fa-user"></i>
-                      <a class="nav-link" href="about.html" id="nav-about"> About</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link-container">
-                      <i class="fas fa-tasks"></i>
-                      <a class="nav-link active" href="#" id="nav-skills"> Skills</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <div class="nav-link-container">
-                      <i class="fas fa-envelope"></i>
-                      <a class="nav-link" href="contact.html" id="nav-contact"> Contact</a>
-                    </div>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                  <select id="language-selector" class="form-select">
-                      <option value="en">&#x1F1EC;&#x1F1E7; English</option>
-                      <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
-                  </select>
-              </li>
-          </ul>
-
-          </div>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <div class="container my-5" id="container">
+    <div class="container mt-5" id="container">
         <h3 class="mb-4" id="skills-maintitle">Skills : </h3>
         
         <div class="my-5">
@@ -135,59 +131,95 @@
 
         <div class="container my-5">
           <h3 class="mb-4" id="certificates-title">Certificates:</h3>
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-            <div class="col">
+          <div class="columns is-multiline">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
               <div class="card">
-                <img src="../assets/certificates/respWeb.png" class="card-img-top" alt="Responsive Web Design">
-                <div class="card-body">
-                  <h5 class="card-title">Responsive Web Design</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">FreeCodeCamp, verify at: <a href="https://www.freecodecamp.org/certification/MrElyazid/responsive-web-design" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="../assets/certificates/respWeb.png" alt="Responsive Web Design">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h5 class="title is-5">Responsive Web Design</h5>
+                    <h6 class="subtitle is-6">FreeCodeCamp, verify at: <a href="https://www.freecodecamp.org/certification/MrElyazid/responsive-web-design" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
               <div class="card">
-                <img src="../assets/certificates/problemSolving.png" class="card-img-top" alt="Problem Solving">
-                <div class="card-body">
-                  <h5 class="card-title">Problem Solving (Basic)</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">HackerRank, verify at: <a href="https://www.hackerrank.com/certificates/db8dcf6e0161" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="../assets/certificates/problemSolving.png" alt="Problem Solving">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h5 class="title is-5">Problem Solving (Basic)</h5>
+                    <h6 class="subtitle is-6">HackerRank, verify at: <a href="https://www.hackerrank.com/certificates/db8dcf6e0161" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
               <div class="card">
-                <img src="../assets/certificates/pythonHackerrank.png" class="card-img-top" alt="Python">
-                <div class="card-body">
-                  <h5 class="card-title">Python</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">HackerRank, verify at: <a href="https://www.hackerrank.com/certificates/69e552cf0d16" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="../assets/certificates/pythonHackerrank.png" alt="Python">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h5 class="title is-5">Python</h5>
+                    <h6 class="subtitle is-6">HackerRank, verify at: <a href="https://www.hackerrank.com/certificates/69e552cf0d16" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
               <div class="card">
-                <img src="../assets/certificates/webDevSololearn.png" class="card-img-top" alt="Web Development">
-                <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">SoloLearn, verify at: <a href="https://www.sololearn.com/certificates/CC-AE89DCHH" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="../assets/certificates/webDevSololearn.png" alt="Web Development">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h5 class="title is-5">Web Development</h5>
+                    <h6 class="subtitle is-6">SoloLearn, verify at: <a href="https://www.sololearn.com/certificates/CC-AE89DCHH" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
               <div class="card">
-                <img src="../assets/certificates/scientificComp.png" class="card-img-top" alt="Introduction to C++">
-                <div class="card-body">
-                  <h5 class="card-title">Scientific Computing with Python</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">FreeCodeCamp, verify at: <a href="https://www.freecodecamp.org/certification/MrElyazid/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="../assets/certificates/scientificComp.png" alt="Introduction to C++">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h5 class="title is-5">Scientific Computing with Python</h5>
+                    <h6 class="subtitle is-6">FreeCodeCamp, verify at: <a href="https://www.freecodecamp.org/certification/MrElyazid/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
               <div class="card">
-                <img src="../assets/certificates/pythonDevSololearn.png" class="card-img-top" alt="Python Developer">
-                <div class="card-body">
-                  <h5 class="card-title">Python Developer</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">SoloLearn, verify at: <a href="https://www.sololearn.com/certificates/CC-XQGAOAFA" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                <div class="card-image">
+                  <figure class="image is-4by3">
+                    <img src="../assets/certificates/pythonDevSololearn.png" alt="Python Developer">
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="content">
+                    <h5 class="title is-5">Python Developer</h5>
+                    <h6 class="subtitle is-6">SoloLearn, verify at: <a href="https://www.sololearn.com/certificates/CC-XQGAOAFA" target="_blank" rel="noopener noreferrer">Link</a></h6>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,46 +229,64 @@
         <div class="container my-5">
             <h3 class="mb-4" id="achievements-title">Other Acheivements :</h3>
             <li id="codewars-achievement">Reaching 3 kyu on <a href="https://www.codewars.com/users/MrElyazid" target="_blank" rel="noopener noreferrer">codewars</a>, Top 2% worldwide .</li>
-            <img src="https://www.codewars.com/users/MrElyazid/badges/large" alt="CodeWars Badge" id="codewars-badge" class="img-fluid">
+            <img src="https://www.codewars.com/users/MrElyazid/badges/large" alt="CodeWars Badge" id="codewars-badge" class="codewars-badge">
         </div>
 
-        <div class="my-5 text-center">
+        <div class="my-5 has-text-centered">
             <h2 class="mb-4" id="resume-title">Download My Resume</h2>
-            <button class="btn btn-primary btn-lg" onclick="fakeDownload()" id="resume-button">
+            <button class="button is-primary is-large" onclick="fakeDownload()" id="resume-button">
                 <i class="fas fa-download"></i> Download Resume
             </button>
         </div>
 
         <div id="loadingBar" style="display: none;">
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
-            </div>
+            <progress class="progress is-primary" value="0" max="100"></progress>
             <p id="loading-text">Downloading...</p>
             <p id="error-text" style="display: none;">Error: Resume ran away. Last seen heading to Hawaii. Ok seriously, gonna make a good one later, the current one sucks.</p>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../scripts/sketch.js"></script>
     <script src="../scripts/script.js"></script>
-
     <script>
-    function fakeDownload() {
-        document.getElementById('loadingBar').style.display = 'block';
-        document.getElementById('loading-text').style.display = 'block';
-        document.getElementById('error-text').style.display = 'none';
-        var width = 0;
-        var interval = setInterval(function() {
-            if (width >= 100) {
-                clearInterval(interval);
-                document.getElementById('loading-text').style.display = 'none';
-                document.getElementById('error-text').style.display = 'block';
-            } else {
-                width+=5;
-                document.querySelector('.progress-bar').style.width = width + '%';
+        // Bulma navbar burger menu toggle
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+                        
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                    });
+                });
             }
-        }, 50);
-    }
+        });
+        
+        function fakeDownload() {
+            document.getElementById('loadingBar').style.display = 'block';
+            document.getElementById('loading-text').style.display = 'block';
+            document.getElementById('error-text').style.display = 'none';
+            var width = 0;
+            var interval = setInterval(function() {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    document.getElementById('loading-text').style.display = 'none';
+                    document.getElementById('error-text').style.display = 'block';
+                } else {
+                    width+=5;
+                    document.querySelector('.progress').value = width;
+                }
+            }, 50);
+        }
     </script>
 </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="google-site-verification" content="9fRdPbp9b9qPj5acclW8X2-KTw3bfscns12UZUg5trQ" />
     <title>Essoly Elyazid</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/navstyle.css">
@@ -15,74 +15,71 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24" class="d-inline-block align-text-top">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24">
                 <span id="nav-portfolio">Elyazid's Portfolio</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <div class="nav-link-container">
-                            <i class="fas fa-home"></i>
-                            <a class="nav-link active" aria-current="page" href="#" id="nav-home"> Home</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link-container">
-                            <i class="fas fa-user"></i>
-                            <a class="nav-link" href="pages/about.html" id="nav-about"> About</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link-container">
-                            <i class="fas fa-tasks"></i>
-                            <a class="nav-link" href="pages/skills.html" id="nav-skills"> Skills</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link-container">
-                            <i class="fas fa-envelope"></i>
-                            <a class="nav-link" href="pages/contact.html" id="nav-contact"> Contact</a>
-                        </div>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <select id="language-selector" class="form-select">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        
+        <div id="navbarNav" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item active" href="#" id="nav-home">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <a class="navbar-item" href="pages/about.html" id="nav-about">
+                    <i class="fas fa-user"></i>
+                    About
+                </a>
+                <a class="navbar-item" href="pages/skills.html" id="nav-skills">
+                    <i class="fas fa-tasks"></i>
+                    Skills
+                </a>
+                <a class="navbar-item" href="pages/contact.html" id="nav-contact">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </a>
+            </div>
+            
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="select">
+                        <select id="language-selector">
                             <option value="en">&#x1F1EC;&#x1F1E7; English</option>
                             <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
                         </select>
-                    </li>
-                </ul>
-
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-12 col-md-6 text-center mt-5 img-container">
-                <img src="assets/luffy.png" class="img-thumbnail custom-img ratio-1x1" alt="Essoly Elyazid">
-            </div>
-
-            <div class="col-12 col-md-6 text-center mt-5">
-                <h3 id="whoami">$whoami : </h3>
-                <p id="intro" style="text-align: center;">
-                    Essoly Elyazid, 21 years old, from Casablanca Morocco, I study computer science at <abbr title="Ecole Nationale des sciences appliquées"><a href="https://ensa.uit.ac.ma/"  target="_blank">ENSAK</a></abbr>.
-                </p>
+    
+        <div class="container">
+            <div class="columns is-centered is-vcentered">
+                <div class="column is-12-mobile is-6-tablet img-container mt-5 has-text-centered">
+                    <img src="assets/luffy.png" class="custom-img ratio-1x1" alt="Essoly Elyazid">
+                </div>
+    
+                <div class="column is-12-mobile is-6-tablet mt-5 has-text-centered">
+                    <h3 id="whoami">$whoami : </h3>
+                    <p id="intro">
+                        Essoly Elyazid, 21 years old, from Casablanca Morocco, I study computer science at <abbr title="Ecole Nationale des sciences appliquées"><a href="https://ensa.uit.ac.ma/"  target="_blank">ENSAK</a></abbr>.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     
     <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
+        <div class="columns">
+            <div class="column is-8 is-offset-2">
                 <div class="my-5">
                     <h3 class="h3-header" id="opinions-title">Opinions : <h6 id="opinions-subtitle">Best way to know someone!</h6></h3>
                     <div class="container">
@@ -122,78 +119,100 @@
         </div>
     </div>
     
-    <div class="container text-center mt-5">
-        <h2 class="text-right mb-3 find-text" id="find-me">Find me on :</h2>
-        <div class="social-links row justify-content-center">
-            <div class="social-link col-3">
+    <div class="container has-text-centered mt-5">
+        <h2 class="has-text-right mb-3 find-text" id="find-me">Find me on :</h2>
+        <div class="social-links columns is-centered">
+            <div class="social-link column is-3">
                 <a href="https://github.com/MrElyazid" class="icon-link" target="_blank"><i class="fab fa-github fa-2x"></i></a>
                 <p>Github</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://www.codewars.com/users/MrElyazid" class="icon-link" target="_blank"><img src="assets/simple-icons--codewars.png" alt="CodeWars" style="height: 32px;"></a>
                 <p>Codewars</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://www.hackerrank.com/MrElyazid" class="icon-link" target="_blank"><i class="fab fa-hackerrank fa-2x"></i></a>
                 <p>HackerRank</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://www.freecodecamp.org/MrElyazid" class="icon-link" target="_blank"><i class="fa-brands fa-free-code-camp fa-2x"></i></a>
                 <p>FCC</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://exercism.io/profiles/MrElyazid" class="icon-link" target="_blank"><i class="fas fa-dumbbell fa-2x"></i></a>
                 <p>Exercism</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://www.linkedin.com/in/elyazid-essoly-2bb6062b8" class="icon-link" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
                 <p>LinkedIn</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://www.sololearn.com/en/profile/18803677" class="icon-link" target="_blank"><i class="fa-brands fas fa-code fa-2x"></i></a>
                 <p>Solo Learn</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://lichess.org/@/Mr_Elyazid" target="_blank" class="icon-link"><i class="fas fa-chess fa-2x"></i></a>
                 <p>Lichess</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://steamcommunity.com/profiles/76561198997215925/" target="_blank" class="icon-link"><i class="fab fa-steam fa-2x"></i></a>
                 <p>Steam</p>
             </div>
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://myanimelist.net/profile/baldi666" class="icon-link" target="_blank"><img src="assets/MAL_logo.png" alt="MAL" style="height: 32px;"></a>
                 <p>MyAnimeList</p>
             </div>
 
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://open.spotify.com/user/zd4lsf6wwfstszkrh42xjmrpn?si=cdfec123f0794a25" class="icon-link" target="_blank"><i class="fa-brands fa-spotify fa-2x"></i></a>
                 <p>Spotify</p>
             </div>
 
-            <div class="social-link col-3">
+            <div class="social-link column is-3">
                 <a href="https://www.chess.com/member/nomomicantpauseit" target="_blank" class="icon-link"><i class="fas fa-chess fa-2x"></i></a>
                 <p>chess.com</p>
             </div>
 
         </div>
-        <div class="d-flex justify-content-center align-items-center flex-column mt-5" style="padding-bottom: 7%">
-            <h2 class="text-center my-3 puzzle-text">Free puzzle for you:</h2>
-            <div class="iframe-container d-flex justify-content-center align-items-center ratio ratio-1x1" style="width: 100%; max-width: 450px; max-height: 500px; height: 100%; position: relative; padding-bottom: 7%;">
-                <iframe 
+        <div class="is-flex is-justify-content-center is-align-items-center is-flex-direction-column mt-5" style="padding-bottom: 7%">
+            <h2 class="has-text-centered my-3 puzzle-text">Free puzzle for you:</h2>
+            <div class="iframe-container is-flex is-justify-content-center is-align-items-center" style="width: 100%; max-width: 450px; max-height: 500px; height: 100%; position: relative; padding-bottom: 7%;">
+                <iframe
                     src="https://lichess.org/training/frame?theme=blue&bg=dark"
                     allowtransparency="true"
-                    style="position: absolute; top: 0; left: 0;" class="iframe ratio ratio-1x1">
+                    style="position: absolute; top: 0; left: 0;" class="iframe">
                 </iframe>
             </div>
         </div>
         
 </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="scripts/sketch.js"></script>
-    <script src="scripts/script.js"></script>
-
-</body>
-</html>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+        <script src="scripts/sketch.js"></script>
+        <script src="scripts/script.js"></script>
+        <script>
+            // Bulma navbar burger menu toggle
+            document.addEventListener('DOMContentLoaded', () => {
+                // Get all "navbar-burger" elements
+                const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                
+                // Check if there are any navbar burgers
+                if ($navbarBurgers.length > 0) {
+                    // Add a click event on each of them
+                    $navbarBurgers.forEach(el => {
+                        el.addEventListener('click', () => {
+                            // Get the target from the "data-target" attribute
+                            const target = el.dataset.target;
+                            const $target = document.getElementById(target);
+                            
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            el.classList.toggle('is-active');
+                            $target.classList.toggle('is-active');
+                        });
+                    });
+                }
+            });
+        </script>
+    
+    </body>
+    </html>

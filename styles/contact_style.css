@@ -1,4 +1,3 @@
-
 body, html {
     margin: 0;
     padding: 0;
@@ -43,4 +42,13 @@ body, html {
 
 .contact-div {
   opacity: 0.85;
+}
+
+/* Bulma utility overrides */
+.mt-5 {
+    margin-top: 1.5rem !important;
+}
+
+.is-centered {
+    justify-content: center;
 }
