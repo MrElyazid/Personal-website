@@ -1,0 +1,19 @@
+title: Elyazid's Portfolio
+email: essoly.elyazid@gmail.com
+description: Personal portfolio and blog of Essoly Elyazid, a computer science student from Morocco.
+baseurl: ""
+url: "https://elyazid.is-a.dev"
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CNAME

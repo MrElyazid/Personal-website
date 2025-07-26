@@ -1,292 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skills and Projects page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="../styles/skills.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="../styles/navstyle.css">
-    <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../styles/skills.css" />
+    <link rel="stylesheet" href="../styles/navstyle.css" />
+    <link rel="stylesheet" href="../styles/darkmode.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <link rel="stylesheet" href="../styles/skills.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/skills.css" />
+  </head>
+  <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="../index.html">
-                <img src="../assets/LegendaryCat.jpg" alt="MrMeow" width="30" height="24">
-                <span id="nav-portfolio">Elyazid's Portfolio</span>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <img
+            src="../assets/LegendaryCat.jpg"
+            alt="MrMeow"
+            width="30"
+            height="24"
+          />
+          <span id="nav-portfolio">Elyazid's Portfolio</span>
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarNav"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarNav" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="../index.html" id="nav-home">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+          <a class="navbar-item" href="about.html" id="nav-about">
+            <i class="fas fa-user"></i>
+            About
+          </a>
+          <a class="navbar-item active" href="#" id="nav-skills">
+            <i class="fas fa-tasks"></i>
+            Skills
+          </a>
+          <a class="navbar-item" href="projects.html" id="nav-projects">
+            <i class="fas fa-code"></i>
+            Projects
+          </a>
+          <a class="navbar-item" href="blog.html" id="nav-blog">
+            <i class="fas fa-blog"></i>
+            Blog
+          </a>
         </div>
-        
-        <div id="navbarNav" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="../index.html" id="nav-home">
-                    <i class="fas fa-home"></i>
-                    Home
-                </a>
-                <a class="navbar-item" href="about.html" id="nav-about">
-                    <i class="fas fa-user"></i>
-                    About
-                </a>
-                <a class="navbar-item active" href="#" id="nav-skills">
-                    <i class="fas fa-tasks"></i>
-                    Skills
-                </a>
-                <a class="navbar-item" href="contact.html" id="nav-contact">
-                    <i class="fas fa-envelope"></i>
-                    Contact
-                </a>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button class="theme-toggle" title="Toggle dark/light mode">
+              <i class="fas fa-moon dark-icon"></i>
+              <i class="fas fa-sun light-icon"></i>
+            </button>
+          </div>
+          <div class="navbar-item">
+            <div class="select">
+              <select id="language-selector">
+                <option value="en">&#x1F1EC;&#x1F1E7; English</option>
+                <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
+              </select>
             </div>
-            
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="select">
-                        <select id="language-selector">
-                            <option value="en">&#x1F1EC;&#x1F1E7; English</option>
-                            <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </nav>
 
     <div class="container mt-5" id="container">
-        <h3 class="mb-4" id="skills-maintitle">Skills : </h3>
-        
-        <div class="my-5">
-            <h4 id="programming-title">- Programming Languages : </h4>
-            <ul class="list-unstyled">
-                <li id="programming-good">Good at: <span>Python</span>.</li>
-                <li id="programming-intermediate">Intermediate at: <span>JavaScript</span>.</li>
-                <li id="programming-knowledge">Have knowledge in: <span>C, C++, PHP, R</span>.</li>
-            </ul>
-        </div>
-    
-        <div class="my-5">
-            <h4 id="webdev-title">- Web Dev : </h4>
-            <p id="webdev-intro">I know the basics html, css, PHP and JS. For web frameworks and libraries :</p>
-            <ul class="list-unstyled">
-                <li id="webdev-frontend">Frontend: <span>Vue.js</span>.</li>
-                <li id="webdev-backend">Backend: <span>Laravel</span>, <span>Flask</span> and <span>Django</span>.</li>
-                <li id="webdev-databases">Databases: <span>MariaDB</span>, <span>MongoDB</span>.</li>
-                <li id="webdev-css">CSS Libraries : <span>Bootstrap</span>.</li>
-                <li id="webdev-baas">BaaS: <span>Firebase</span></li>
-            </ul>
-            <p id="webdev-other">I also worked with other frameworks like <span>React</span> and <span>React Native</span> for Mobile dev.</p>
-        </div>
-    
-        <div class="my-5">
-            <h4 id="devops-title">- DevOps : </h4>
-            <ul class="list-unstyled">
-                <li id="devops-text">DevOps and Fullstack Web Development are the two main fields im currently interested in, although i only have minimal knowledge of tools like <span>NGINX</span>, <span>Docker</span> and <span>Gitlab</span> im definitely going to dive deeper into this field when i get the chance.</li>
-            </ul>
-        </div>
+      <h3 class="mb-4" id="skills-maintitle">Skills :</h3>
 
-        <div class="my-5">
-            <h4 id="datascience-title">- Data Science : </h4>
-            <ul class="list-unstyled">
-                <li id="datascience-text">Basics of : <span>Pandas</span>, <span>Numpy</span>, <span>Matplotlib</span> and <span>Seaborn</span>.</li>
-            </ul>
-        </div>
+      <div class="my-5">
+        <h4 id="programming-title">- Programming Languages :</h4>
+        <ul class="list-unstyled">
+          <li id="programming-good">Good at: <span>Python</span>.</li>
+          <li id="programming-intermediate">
+            Intermediate at: <span>JavaScript</span>.
+          </li>
+          <li id="programming-knowledge">
+            Have knowledge in: <span>C, C++, PHP, R</span>.
+          </li>
+        </ul>
+      </div>
 
-        <div class="my-5">
-            <h4 id="gui-title">- GUI Development : </h4>
-            <ul class="list-unstyled">
-                <li id="gui-text">I worked with Python <span>Tkinter</span> and <span>Pygame</span>, and planning on seeing <span>Electron</span> or <span>PyQt</span> in the future.</li>
-            </ul>
-        </div>
-    
-        <div class="my-5">
-            <h4 id="graphics-title">- Graphics and Creative Coding : </h4>
-            <ul class="list-unstyled">
-                <li id="graphics-text">I like the Processing project, and a big fan of <span>P5.js</span>.</li>
-            </ul>
-        </div>
-    
-        <div class="my-5">
-            <h4 id="ai-title">- AI and ML : </h4>
-            <ul class="list-unstyled">
-                <li id="ai-text">Not much yet but planning on having minimal knowledge for : <span>TensorFlow</span>, and <span>Scikit-learn</span>.</li>
-            </ul>
-        </div>
+      <div class="my-5">
+        <h4 id="webdev-title">- Web Dev :</h4>
+        <p id="webdev-intro">
+          I know the basics html, css, PHP and JS. For web frameworks and
+          libraries :
+        </p>
+        <ul class="list-unstyled">
+          <li id="webdev-frontend">Frontend: <span>Vue.js</span>.</li>
+          <li id="webdev-backend">
+            Backend: <span>Laravel</span>, <span>Flask</span> and
+            <span>Django</span>.
+          </li>
+          <li id="webdev-databases">
+            Databases: <span>MariaDB</span>, <span>MongoDB</span>.
+          </li>
+          <li id="webdev-css">CSS Libraries : <span>Bootstrap</span>.</li>
+          <li id="webdev-baas">BaaS: <span>Firebase</span></li>
+        </ul>
+        <p id="webdev-other">
+          I also worked with other frameworks like <span>React</span> and
+          <span>React Native</span> for Mobile dev.
+        </p>
+      </div>
 
-        <div class="my-5">
-            <h4 id="misc-title">- Misc : </h4>
-            <ul class="list-unstyled">
-                <li id="misc-text">Other technologies I know about include: <span>Git</span> for version control, Basic <span>Linux</span> and <span>Bash Scripting</span> commands, <span>UML</span> for software and system design, and much more...</li>
-            </ul>
-        </div>
+      <div class="my-5">
+        <h4 id="devops-title">- DevOps :</h4>
+        <ul class="list-unstyled">
+          <li id="devops-text">
+            DevOps and Fullstack Web Development are the two main fields im
+            currently interested in, although i only have minimal knowledge of
+            tools like <span>NGINX</span>, <span>Docker</span> and
+            <span>Gitlab</span> im definitely going to dive deeper into this
+            field when i get the chance.
+          </li>
+        </ul>
+      </div>
 
-        <h3 class="mb-4" id="online-presence-title">Online presence and Accomplishments on platforms :</h3>
-        <p id="certificates-intro">I dont believe in the evaluation of skills through certificates or completing tutorials, in case you do, ( or if you're an employer ) then :</p>
+      <div class="my-5">
+        <h4 id="datascience-title">- Data Science :</h4>
+        <ul class="list-unstyled">
+          <li id="datascience-text">
+            Basics of : <span>Pandas</span>, <span>Numpy</span>,
+            <span>Matplotlib</span> and <span>Seaborn</span>.
+          </li>
+        </ul>
+      </div>
 
-        <div class="container my-5">
-          <h3 class="mb-4" id="certificates-title">Certificates:</h3>
-          <div class="columns is-multiline">
-            <div class="column is-12-mobile is-6-tablet is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="../assets/certificates/respWeb.png" alt="Responsive Web Design">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h5 class="title is-5">Responsive Web Design</h5>
-                    <h6 class="subtitle is-6">FreeCodeCamp, verify at: <a href="https://www.freecodecamp.org/certification/MrElyazid/responsive-web-design" target="_blank" rel="noopener noreferrer">Link</a></h6>
-                  </div>
+      <div class="my-5">
+        <h4 id="gui-title">- GUI Development :</h4>
+        <ul class="list-unstyled">
+          <li id="gui-text">
+            I worked with Python <span>Tkinter</span> and <span>Pygame</span>,
+            and planning on seeing <span>Electron</span> or <span>PyQt</span> in
+            the future.
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-5">
+        <h4 id="graphics-title">- Graphics and Creative Coding :</h4>
+        <ul class="list-unstyled">
+          <li id="graphics-text">
+            I like the Processing project, and a big fan of <span>P5.js</span>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-5">
+        <h4 id="ai-title">- AI and ML :</h4>
+        <ul class="list-unstyled">
+          <li id="ai-text">
+            Not much yet but planning on having minimal knowledge for :
+            <span>TensorFlow</span>, and <span>Scikit-learn</span>.
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-5">
+        <h4 id="misc-title">- Misc :</h4>
+        <ul class="list-unstyled">
+          <li id="misc-text">
+            Other technologies I know about include: <span>Git</span> for
+            version control, Basic <span>Linux</span> and
+            <span>Bash Scripting</span> commands, <span>UML</span> for software
+            and system design, and much more...
+          </li>
+        </ul>
+      </div>
+
+      <h3 class="mb-4" id="online-presence-title">
+        Online presence and Accomplishments on platforms :
+      </h3>
+      <p id="certificates-intro">
+        I dont believe in the evaluation of skills through certificates or
+        completing tutorials, in case you do, ( or if you're an employer ) then
+        :
+      </p>
+
+      <div class="container my-5">
+        <h3 class="mb-4" id="certificates-title">Certificates:</h3>
+        <div class="columns is-multiline">
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="../assets/certificates/respWeb.png"
+                    alt="Responsive Web Design"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h5 class="title is-5">Responsive Web Design</h5>
+                  <h6 class="subtitle is-6">
+                    FreeCodeCamp, verify at:
+                    <a
+                      href="https://www.freecodecamp.org/certification/MrElyazid/responsive-web-design"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Link</a
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="column is-12-mobile is-6-tablet is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="../assets/certificates/problemSolving.png" alt="Problem Solving">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h5 class="title is-5">Problem Solving (Basic)</h5>
-                    <h6 class="subtitle is-6">HackerRank, verify at: <a href="https://www.hackerrank.com/certificates/db8dcf6e0161" target="_blank" rel="noopener noreferrer">Link</a></h6>
-                  </div>
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="../assets/certificates/problemSolving.png"
+                    alt="Problem Solving"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h5 class="title is-5">Problem Solving (Basic)</h5>
+                  <h6 class="subtitle is-6">
+                    HackerRank, verify at:
+                    <a
+                      href="https://www.hackerrank.com/certificates/db8dcf6e0161"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Link</a
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
-            <div class="column is-12-mobile is-6-tablet is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="../assets/certificates/pythonHackerrank.png" alt="Python">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h5 class="title is-5">Python</h5>
-                    <h6 class="subtitle is-6">HackerRank, verify at: <a href="https://www.hackerrank.com/certificates/69e552cf0d16" target="_blank" rel="noopener noreferrer">Link</a></h6>
-                  </div>
+          </div>
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="../assets/certificates/pythonHackerrank.png"
+                    alt="Python"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h5 class="title is-5">Python</h5>
+                  <h6 class="subtitle is-6">
+                    HackerRank, verify at:
+                    <a
+                      href="https://www.hackerrank.com/certificates/69e552cf0d16"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Link</a
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
-            <div class="column is-12-mobile is-6-tablet is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="../assets/certificates/webDevSololearn.png" alt="Web Development">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h5 class="title is-5">Web Development</h5>
-                    <h6 class="subtitle is-6">SoloLearn, verify at: <a href="https://www.sololearn.com/certificates/CC-AE89DCHH" target="_blank" rel="noopener noreferrer">Link</a></h6>
-                  </div>
+          </div>
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="../assets/certificates/webDevSololearn.png"
+                    alt="Web Development"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h5 class="title is-5">Web Development</h5>
+                  <h6 class="subtitle is-6">
+                    SoloLearn, verify at:
+                    <a
+                      href="https://www.sololearn.com/certificates/CC-AE89DCHH"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Link</a
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
-            <div class="column is-12-mobile is-6-tablet is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="../assets/certificates/scientificComp.png" alt="Introduction to C++">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h5 class="title is-5">Scientific Computing with Python</h5>
-                    <h6 class="subtitle is-6">FreeCodeCamp, verify at: <a href="https://www.freecodecamp.org/certification/MrElyazid/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer">Link</a></h6>
-                  </div>
+          </div>
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="../assets/certificates/scientificComp.png"
+                    alt="Introduction to C++"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h5 class="title is-5">Scientific Computing with Python</h5>
+                  <h6 class="subtitle is-6">
+                    FreeCodeCamp, verify at:
+                    <a
+                      href="https://www.freecodecamp.org/certification/MrElyazid/scientific-computing-with-python-v7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Link</a
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
-            <div class="column is-12-mobile is-6-tablet is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image is-4by3">
-                    <img src="../assets/certificates/pythonDevSololearn.png" alt="Python Developer">
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="content">
-                    <h5 class="title is-5">Python Developer</h5>
-                    <h6 class="subtitle is-6">SoloLearn, verify at: <a href="https://www.sololearn.com/certificates/CC-XQGAOAFA" target="_blank" rel="noopener noreferrer">Link</a></h6>
-                  </div>
+          </div>
+          <div class="column is-12-mobile is-6-tablet is-4-desktop">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img
+                    src="../assets/certificates/pythonDevSololearn.png"
+                    alt="Python Developer"
+                  />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="content">
+                  <h5 class="title is-5">Python Developer</h5>
+                  <h6 class="subtitle is-6">
+                    SoloLearn, verify at:
+                    <a
+                      href="https://www.sololearn.com/certificates/CC-XQGAOAFA"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Link</a
+                    >
+                  </h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div class="container my-5">
-            <h3 class="mb-4" id="achievements-title">Other Acheivements :</h3>
-            <li id="codewars-achievement">Reaching 3 kyu on <a href="https://www.codewars.com/users/MrElyazid" target="_blank" rel="noopener noreferrer">codewars</a>, Top 2% worldwide .</li>
-            <img src="https://www.codewars.com/users/MrElyazid/badges/large" alt="CodeWars Badge" id="codewars-badge" class="codewars-badge">
-        </div>
+      </div>
 
-        <div class="my-5 has-text-centered">
-            <h2 class="mb-4" id="resume-title">Download My Resume</h2>
-            <button class="button is-primary is-large" onclick="fakeDownload()" id="resume-button">
-                <i class="fas fa-download"></i> Download Resume
-            </button>
-        </div>
+      <div class="container my-5">
+        <h3 class="mb-4" id="achievements-title">Other Acheivements :</h3>
+        <li id="codewars-achievement">
+          Reaching 3 kyu on
+          <a
+            href="https://www.codewars.com/users/MrElyazid"
+            target="_blank"
+            rel="noopener noreferrer"
+            >codewars</a
+          >, Top 2% worldwide .
+        </li>
+        <img
+          src="https://www.codewars.com/users/MrElyazid/badges/large"
+          alt="CodeWars Badge"
+          id="codewars-badge"
+          class="codewars-badge"
+        />
+      </div>
 
-        <div id="loadingBar" style="display: none;">
-            <progress class="progress is-primary" value="0" max="100"></progress>
-            <p id="loading-text">Downloading...</p>
-            <p id="error-text" style="display: none;">Error: Resume ran away. Last seen heading to Hawaii. Ok seriously, gonna make a good one later, the current one sucks.</p>
-        </div>
+      <div class="my-5 has-text-centered">
+        <h2 class="mb-4" id="resume-title">Download My Resume</h2>
+        <button
+          class="button is-primary is-large"
+          onclick="fakeDownload()"
+          id="resume-button"
+        >
+          <i class="fas fa-download"></i> Download Resume
+        </button>
+      </div>
+
+      <div id="loadingBar" style="display: none">
+        <progress class="progress is-primary" value="0" max="100"></progress>
+        <p id="loading-text">Downloading...</p>
+        <p id="error-text" style="display: none">
+          Error: Resume ran away. Last seen heading to Hawaii. Ok seriously,
+          gonna make a good one later, the current one sucks.
+        </p>
+      </div>
     </div>
 
+    <script src="../scripts/theme.js"></script>
     <script src="../scripts/sketch.js"></script>
     <script src="../scripts/script.js"></script>
     <script>
-        // Bulma navbar burger menu toggle
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-                        
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
-        });
-        
-        function fakeDownload() {
-            document.getElementById('loadingBar').style.display = 'block';
-            document.getElementById('loading-text').style.display = 'block';
-            document.getElementById('error-text').style.display = 'none';
-            var width = 0;
-            var interval = setInterval(function() {
-                if (width >= 100) {
-                    clearInterval(interval);
-                    document.getElementById('loading-text').style.display = 'none';
-                    document.getElementById('error-text').style.display = 'block';
-                } else {
-                    width+=5;
-                    document.querySelector('.progress').value = width;
-                }
-            }, 50);
+      // Bulma navbar burger menu toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
         }
+      });
+
+      function fakeDownload() {
+        document.getElementById("loadingBar").style.display = "block";
+        document.getElementById("loading-text").style.display = "block";
+        document.getElementById("error-text").style.display = "none";
+        var width = 0;
+        var interval = setInterval(function () {
+          if (width >= 100) {
+            clearInterval(interval);
+            document.getElementById("loading-text").style.display = "none";
+            document.getElementById("error-text").style.display = "block";
+          } else {
+            width += 5;
+            document.querySelector(".progress").value = width;
+          }
+        }, 50);
+      }
     </script>
-</body>
+  </body>
 </html>

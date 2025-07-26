@@ -3,7 +3,8 @@
     "home": "Accueil",
     "about": "À propos",
     "skills": "Compétences",
-    "contact": "Contact",
+    "projects": "Projets",
+    "blog": "Blog",
     "portfolio": "Portfolio d'Elyazid"
   },
   "home": {
@@ -145,11 +146,5 @@
       "downloading": "Téléchargement...",
       "error": "Erreur : Le CV s'est enfui. Dernière fois vu en direction d'Hawaï. Bon sérieusement, j'en ferai un bon plus tard, l'actuel n'est pas terrible."
     }
-  },
-  "contact": {
-    "title": "Vous pouvez me joindre via :",
-    "email": "Email :",
-    "linkedin": "LinkedIn :",
-    "discord": "Discord :"
   }
 }

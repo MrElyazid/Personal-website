@@ -1,152 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="../styles/about_style.css">
-    <link rel="stylesheet" href="../styles/navstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../styles/about_style.css" />
+    <link rel="stylesheet" href="../styles/navstyle.css" />
+    <link rel="stylesheet" href="../styles/darkmode.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="../assets/LegendaryCat.jpg" type="image/x-icon" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <link rel="stylesheet" href="../styles/about_style.css">
-    
-</head>
-<body>
-
+    <link rel="stylesheet" href="../styles/about_style.css" />
+  </head>
+  <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="../index.html">
-                <img src="../assets/LegendaryCat.jpg" alt="" width="30" height="24">
-                <span id="nav-portfolio">Elyazid's Portfolio</span>
-            </a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNav">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="../index.html">
+          <img src="../assets/LegendaryCat.jpg" alt="" width="30" height="24" />
+          <span id="nav-portfolio">Elyazid's Portfolio</span>
+        </a>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarNav"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarNav" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="../index.html" id="nav-home">
+            <i class="fas fa-home"></i>
+            Home
+          </a>
+          <a class="navbar-item active" href="#" id="nav-about">
+            <i class="fas fa-user"></i>
+            About
+          </a>
+          <a class="navbar-item" href="skills.html" id="nav-skills">
+            <i class="fas fa-tasks"></i>
+            Skills
+          </a>
+          <a class="navbar-item" href="projects.html" id="nav-projects">
+            <i class="fas fa-code"></i>
+            Projects
+          </a>
+          <a class="navbar-item" href="blog.html" id="nav-blog">
+            <i class="fas fa-blog"></i>
+            Blog
+          </a>
         </div>
-        
-        <div id="navbarNav" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="../index.html" id="nav-home">
-                    <i class="fas fa-home"></i>
-                    Home
-                </a>
-                <a class="navbar-item active" href="#" id="nav-about">
-                    <i class="fas fa-user"></i>
-                    About
-                </a>
-                <a class="navbar-item" href="skills.html" id="nav-skills">
-                    <i class="fas fa-tasks"></i>
-                    Skills
-                </a>
-                <a class="navbar-item" href="contact.html" id="nav-contact">
-                    <i class="fas fa-envelope"></i>
-                    Contact
-                </a>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <button class="theme-toggle" title="Toggle dark/light mode">
+              <i class="fas fa-moon dark-icon"></i>
+              <i class="fas fa-sun light-icon"></i>
+            </button>
+          </div>
+          <div class="navbar-item">
+            <div class="select">
+              <select id="language-selector">
+                <option value="en">&#x1F1EC;&#x1F1E7; English</option>
+                <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
+              </select>
             </div>
-            
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="select">
-                        <select id="language-selector">
-                            <option value="en">&#x1F1EC;&#x1F1E7; English</option>
-                            <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </nav>
 
     <div class="container mt-5">
-        <div class="mb-4">
-            <h4 id="education-title">My Education : </h4>
-            <div class="table-container mt-3">
-                <table class="table is-striped is-bordered is-fullwidth">
-                    <thead>
-                        <tr class="is-selected">
-                            <th id="education-header-location">Location</th>
-                            <th id="education-header-time">Time</th>
-                            <th id="education-header-comment">Comment</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="school-1-name">Ecole Nationale des sciences appliquées de Kénitra</td>
-                            <td id="school-1-period">2023 - present</td>
-                            <td id="school-1-comment">Lots of oak trees, like it.</td>
-                        </tr>
-                        <tr>
-                            <td id="school-2-name">Ecole Nationale des sciences appliquées de Tétouan</td>
-                            <td id="school-2-period">2021 - 2023</td>
-                            <td id="school-2-comment">The North has some beautiful landscapes.</td>
-                        </tr>
-                        <tr>
-                            <td id="school-3-name">Hassan Ibn Tabit High school</td>
-                            <td id="school-3-period">2018 - 2021</td>
-                            <td id="school-3-comment">I cant remember ...</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+      <div class="mb-4">
+        <h4 id="education-title">My Education :</h4>
+        <div class="table-container mt-3">
+          <table class="table is-striped is-bordered is-fullwidth">
+            <thead>
+              <tr class="is-selected">
+                <th id="education-header-location">Location</th>
+                <th id="education-header-time">Time</th>
+                <th id="education-header-comment">Comment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="school-1-name">
+                  Ecole Nationale des sciences appliquées de Kénitra
+                </td>
+                <td id="school-1-period">2023 - present</td>
+                <td id="school-1-comment">Lots of oak trees, like it.</td>
+              </tr>
+              <tr>
+                <td id="school-2-name">
+                  Ecole Nationale des sciences appliquées de Tétouan
+                </td>
+                <td id="school-2-period">2021 - 2023</td>
+                <td id="school-2-comment">
+                  The North has some beautiful landscapes.
+                </td>
+              </tr>
+              <tr>
+                <td id="school-3-name">Hassan Ibn Tabit High school</td>
+                <td id="school-3-period">2018 - 2021</td>
+                <td id="school-3-comment">I cant remember ...</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    
-        <div class="my-5">
-            <h4 id="personalities-title">Personalities I like : </h4>
-            <ul class="list-unstyled">
-                <li id="chess-players">Chess Players: <a href="https://www.youtube.com/@DanielNaroditskyGM" target="_blank">GM Daniel Naroditsky</a>, and <a href="https://en.wikipedia.org/wiki/Arjun_Erigaisi" target="_blank">GM Arjun Erigaisi</a>.</li>
-                <li id="programmers">Programmers: <a href="https://www.youtube.com/@Fireship" target="_blank">Jeff Delaney</a>, <a href="https://www.youtube.com/@TheCodingTrain" target="_blank">Daniel Shiffman</a>, <a href="https://www.youtube.com/@geohotarchive" target="_blank" rel="noopener noreferrer">George Hotz</a>.</li>
-            </ul>
-        </div>
-    
-        <div class="my-5">
-            <h4 id="chess-title">Favorite Chess Openings : </h4>
-            <ul class="list-unstyled">
-                <li id="chess-intro">I still dont know any in depth opening theory but : </li>
-                <li id="chess-item-1">I dislike d4, and usually play some queen's gambit declined or king's Indian variation against it.</li>
-                <li id="chess-item-2">Against e4 I usually go with the Caro-Kann, Sicilian Defense, and sometimes e5.</li>
-                <li id="chess-item-3">As White, almost 95% of the games I play start with e4, then deviate to some Ruy Lopez or Italian variation if black responds with e5.</li>
-            </ul>
-        </div>
-    
-        <div class="my-5">
-            <h4 id="additional-title">Additional Info : </h4>
-            <ul class="list-unstyled">
-                <li id="additional-item-1">I'm pretty bad at football, although not catastrophically bad, but we can say normal bad.</li>
-                <li id="additional-item-2">I like experimenting with LLMs.</li>
-                <li id="additional-item-3">I had a hobby of raising pigeons when i was a kid.</li>
-                <li id="additional-item-4">That's what I can think of at the moment.</li>
-            </ul>
-        </div>
+      </div>
+
+      <div class="my-5">
+        <h4 id="personalities-title">Personalities I like :</h4>
+        <ul class="list-unstyled">
+          <li id="chess-players">
+            Chess Players:
+            <a
+              href="https://www.youtube.com/@DanielNaroditskyGM"
+              target="_blank"
+              >GM Daniel Naroditsky</a
+            >, and
+            <a
+              href="https://en.wikipedia.org/wiki/Arjun_Erigaisi"
+              target="_blank"
+              >GM Arjun Erigaisi</a
+            >.
+          </li>
+          <li id="programmers">
+            Programmers:
+            <a href="https://www.youtube.com/@Fireship" target="_blank"
+              >Jeff Delaney</a
+            >,
+            <a href="https://www.youtube.com/@TheCodingTrain" target="_blank"
+              >Daniel Shiffman</a
+            >,
+            <a
+              href="https://www.youtube.com/@geohotarchive"
+              target="_blank"
+              rel="noopener noreferrer"
+              >George Hotz</a
+            >.
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-5">
+        <h4 id="chess-title">Favorite Chess Openings :</h4>
+        <ul class="list-unstyled">
+          <li id="chess-intro">
+            I still dont know any in depth opening theory but :
+          </li>
+          <li id="chess-item-1">
+            I dislike d4, and usually play some queen's gambit declined or
+            king's Indian variation against it.
+          </li>
+          <li id="chess-item-2">
+            Against e4 I usually go with the Caro-Kann, Sicilian Defense, and
+            sometimes e5.
+          </li>
+          <li id="chess-item-3">
+            As White, almost 95% of the games I play start with e4, then deviate
+            to some Ruy Lopez or Italian variation if black responds with e5.
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-5">
+        <h4 id="additional-title">Additional Info :</h4>
+        <ul class="list-unstyled">
+          <li id="additional-item-1">
+            I'm pretty bad at football, although not catastrophically bad, but
+            we can say normal bad.
+          </li>
+          <li id="additional-item-2">I like experimenting with LLMs.</li>
+          <li id="additional-item-3">
+            I had a hobby of raising pigeons when i was a kid.
+          </li>
+          <li id="additional-item-4">
+            That's what I can think of at the moment.
+          </li>
+        </ul>
+      </div>
     </div>
 
+    <script src="../scripts/theme.js"></script>
     <script src="../scripts/sketch.js"></script>
     <script src="../scripts/script.js"></script>
     <script>
-        // Bulma navbar burger menu toggle
-        document.addEventListener('DOMContentLoaded', () => {
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-            
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-                        
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-                    });
-                });
-            }
-        });
+      // Bulma navbar burger menu toggle
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+          // Add a click event on each of them
+          $navbarBurgers.forEach((el) => {
+            el.addEventListener("click", () => {
+              // Get the target from the "data-target" attribute
+              const target = el.dataset.target;
+              const $target = document.getElementById(target);
+
+              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+              el.classList.toggle("is-active");
+              $target.classList.toggle("is-active");
+            });
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
