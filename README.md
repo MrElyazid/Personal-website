@@ -26,7 +26,7 @@ To add a new blog post:
    tags: [tag1, tag2]
    ---
    ```
-3. Write your post content in Markdown below the front matter
+3. Write post content in Markdown below the front matter
 4. Commit and push to GitHub - the site will automatically rebuild
 
 ## Local Development
