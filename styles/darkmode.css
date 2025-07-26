@@ -1,127 +1,127 @@
 /* Dark Mode Support */
 
-/* Bulma's automatic dark mode based on system preference */
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Bulma dark theme variables */
-    --bulma-scheme-brightness: dark;
-    --bulma-scheme-main-l: 11%;
-    --bulma-scheme-main-bis-l: 13%;
-    --bulma-scheme-main-ter-l: 15%;
-    --bulma-background-l: 14%;
-    --bulma-border-weak-l: 21%;
-    --bulma-border-l: 24%;
-    --bulma-text-weak-l: 53%;
-    --bulma-text-l: 71%;
-    --bulma-text-strong-l: 93%;
-    --bulma-text-title-l: 100%;
-    --bulma-hover-background-l-delta: 5%;
-    --bulma-active-background-l-delta: 10%;
-    --bulma-hover-border-l-delta: 10%;
-    --bulma-active-border-l-delta: 20%;
-    --bulma-hover-color-l-delta: 5%;
-    --bulma-active-color-l-delta: 10%;
-    --bulma-shadow-color: white;
-  }
+/* CSS variables for light and dark themes */
+:root {
+  --text-color: #333333;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+  --border-color: #ccc;
+  --card-background: #f8f9fa;
+  --navbar-active-bg: #f5f5f5;
+  --navbar-active-text: #000;
+  --puzzle-text-color: #333;
 }
 
-/* Manual dark mode using data attribute or CSS class */
-[data-theme="dark"],
-.theme-dark {
-  /* Bulma dark theme variables */
-  --bulma-scheme-brightness: dark;
-  --bulma-scheme-main-l: 11%;
-  --bulma-scheme-main-bis-l: 13%;
-  --bulma-scheme-main-ter-l: 15%;
-  --bulma-background-l: 14%;
-  --bulma-border-weak-l: 21%;
-  --bulma-border-l: 24%;
-  --bulma-text-weak-l: 53%;
-  --bulma-text-l: 71%;
-  --bulma-text-strong-l: 93%;
-  --bulma-text-title-l: 100%;
-  --bulma-hover-background-l-delta: 5%;
-  --bulma-active-background-l-delta: 10%;
-  --bulma-hover-border-l-delta: 10%;
-  --bulma-active-border-l-delta: 20%;
-  --bulma-hover-color-l-delta: 5%;
-  --bulma-active-color-l-delta: 10%;
-  --bulma-shadow-color: white;
+.dark {
+  --text-color: #f0f0f0;
+  --link-color: #66b3ff;
+  --link-hover-color: #99ccff;
+  --border-color: #444;
+  --card-background: #2a2a2a;
+  --navbar-active-bg: #3a3a3a;
+  --navbar-active-text: #fff;
+  --puzzle-text-color: #f0f0f0;
+}
+
+/* Update all text elements to use theme colors */
+.dark body,
+.dark html {
+  color: var(--text-color);
+}
+
+/* Update headers and text elements */
+.dark h1, 
+.dark h2, 
+.dark h3, 
+.dark h4, 
+.dark h5, 
+.dark h6, 
+.dark p, 
+.dark li, 
+.dark span, 
+.dark div {
+  color: var(--text-color);
+}
+
+/* Update links */
+.dark a {
+  color: var(--link-color);
+}
+
+.dark a:hover {
+  color: var(--link-hover-color);
 }
 
 /* Custom dark mode styles for your specific elements */
-[data-theme="dark"] #particle-canvas,
-.theme-dark #particle-canvas {
+.dark #particle-canvas {
   background-color: #1a1a1a;
 }
 
 /* Dark mode styles for chess puzzle iframe */
-[data-theme="dark"] .chess-puzzle,
-.theme-dark .chess-puzzle {
+.dark .chess-puzzle {
   border: 1px solid #3a3a3a;
   background-color: #2a2a2a;
 }
 
 /* Dark mode styles for social icons */
-[data-theme="dark"] .icon-link,
-.theme-dark .icon-link {
+.dark .icon-link {
   background-color: #2a2a2a;
   border-color: #3a3a3a;
+  color: var(--link-color);
 }
 
-[data-theme="dark"] .icon-link:hover,
-.theme-dark .icon-link:hover {
+.dark .icon-link:hover {
   background-color: #3a3a3a;
+  color: var(--link-hover-color);
   transform: translateY(-2px);
 }
 
 /* Dark mode styles for article cards */
-[data-theme="dark"] .article-card,
-.theme-dark .article-card {
-  background-color: #2a2a2a;
-  border-color: #3a3a3a;
+.dark .article-card {
+  background-color: var(--card-background);
+  border-color: var(--border-color);
 }
 
-[data-theme="dark"] .article-card:hover,
-.theme-dark .article-card:hover {
+.dark .article-card:hover {
   background-color: #3a3a3a;
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
 }
 
 /* Dark mode for code blocks */
-[data-theme="dark"] .article-body pre,
-.theme-dark .article-body pre {
+.dark .article-body pre {
   background-color: #1e1e1e;
   border-color: #3a3a3a;
   color: #e0e0e0;
 }
 
-[data-theme="dark"] .article-body code,
-.theme-dark .article-body code {
+.dark .article-body code {
   background-color: #2a2a2a;
   color: #ff6b9d;
 }
 
 /* Dark mode for blockquotes */
-[data-theme="dark"] .article-body blockquote,
-.theme-dark .article-body blockquote {
+.dark .article-body blockquote {
   background-color: #2a2a2a;
   border-left-color: #007bff;
+  color: var(--text-color);
 }
 
 /* Dark mode for tables */
-[data-theme="dark"] .article-body table,
-.theme-dark .article-body table {
-  border-color: #3a3a3a;
+.dark .article-body table {
+  border-color: var(--border-color);
+  color: var(--text-color);
 }
 
-[data-theme="dark"] .article-body th,
-.theme-dark .article-body th {
+.dark .article-body th {
   background-color: #2a2a2a;
+  color: var(--text-color);
 }
 
-[data-theme="dark"] .article-body tr:hover,
-.theme-dark .article-body tr:hover {
+.dark .article-body td {
+  color: var(--text-color);
+}
+
+.dark .article-body tr:hover {
   background-color: #3a3a3a;
 }
 
@@ -141,8 +141,7 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] .theme-toggle:hover,
-.theme-dark .theme-toggle:hover {
+.dark .theme-toggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -155,12 +154,43 @@
   display: inline-block;
 }
 
-[data-theme="dark"] .theme-toggle .light-icon,
-.theme-dark .theme-toggle .light-icon {
+.dark .theme-toggle .light-icon {
   display: inline-block;
 }
 
-[data-theme="dark"] .theme-toggle .dark-icon,
-.theme-dark .theme-toggle .dark-icon {
+.dark .theme-toggle .dark-icon {
   display: none;
+}
+
+/* Navbar active item styling */
+.dark .navbar-item.active {
+  background-color: var(--navbar-active-bg);
+  color: var(--navbar-active-text);
+}
+
+/* List items */
+.dark .list-item {
+  color: var(--text-color);
+}
+
+/* Puzzle text */
+.dark .puzzle-text {
+  color: var(--puzzle-text-color);
+}
+
+/* Social link text */
+.dark .social-link p {
+  color: var(--text-color);
+}
+
+/* Who am I section */
+.dark #whoami {
+  color: var(--text-color);
+}
+
+/* Headers */
+.dark .h3-header,
+.dark h2,
+.dark h3 {
+  color: var(--text-color);
 }

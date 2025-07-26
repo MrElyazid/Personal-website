@@ -7,11 +7,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
 
-# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -1,7 +1,12 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="../index.html">
-      <img src="../assets/LegendaryCat.jpg" alt="" width="30" height="24" />
+    <a class="navbar-item" href="/">
+      <img
+        src="assets/LegendaryCat.jpg"
+        alt="MrMeow"
+        width="30"
+        height="24"
+      />
       <span id="nav-portfolio">Elyazid's Portfolio</span>
     </a>
     <a
@@ -19,23 +24,23 @@
 
   <div id="navbarNav" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="../index.html" id="nav-home">
+      <a class="navbar-item {% if page.url == '/' %}active{% endif %}" href="/" id="nav-home">
         <i class="fas fa-home"></i>
         Home
       </a>
-      <a class="navbar-item" href="../pages/about.html" id="nav-about">
+      <a class="navbar-item {% if page.url == '/pages/about.html' %}active{% endif %}" href="/pages/about.html" id="nav-about">
         <i class="fas fa-user"></i>
         About
       </a>
-      <a class="navbar-item" href="../pages/skills.html" id="nav-skills">
+      <a class="navbar-item {% if page.url == '/pages/skills.html' %}active{% endif %}" href="/pages/skills.html" id="nav-skills">
         <i class="fas fa-tasks"></i>
         Skills
       </a>
-      <a class="navbar-item" href="../pages/projects.html" id="nav-projects">
+      <a class="navbar-item {% if page.url == '/pages/projects.html' %}active{% endif %}" href="/pages/projects.html" id="nav-projects">
         <i class="fas fa-code"></i>
         Projects
       </a>
-      <a class="navbar-item" href="../pages/blog.html" id="nav-blog">
+      <a class="navbar-item {% if page.url == '/pages/blog.html' %}active{% endif %}" href="/pages/blog.html" id="nav-blog">
         <i class="fas fa-blog"></i>
         Blog
       </a>
