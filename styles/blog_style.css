@@ -56,6 +56,12 @@ html {
 .article-body {
   line-height: 1.7;
   font-size: 1.1rem;
+  background-color: #f8f9fa;
+  border-radius: .375rem;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  opacity: 0.85;
+  font-family: "Lato", sans-serif;
 }
 
 .article-body h1,
