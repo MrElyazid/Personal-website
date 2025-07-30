@@ -35,7 +35,7 @@ function mousePressed(){
 }
 
 function draw() {
-  background(backgroundColor); // Use dynamic background color
+  background(backgroundColor);
 
   for (let particle of particles) {
     particle.update();

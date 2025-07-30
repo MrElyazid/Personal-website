@@ -67,7 +67,7 @@ p {
     transition: transform 0.3s;
 }
 
-/* Bulma utility overrides */
+
 .mt-5 {
     margin-top: 1.5rem !important;
 }

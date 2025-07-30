@@ -9,7 +9,7 @@
   },
   "home": {
     "whoami": "$whoami :",
-    "intro": "Essoly Elyazid, 20 ans, de Casablanca Maroc, j'étudie l'informatique à <a href=\"https://ensa.uit.ac.ma/\"  target=\"_blank\">ENSAK</a>.",
+    "intro": "Essoly Elyazid, 21 ans, de Casablanca Maroc, j'étudie l'informatique à <a href=\"https://ensa.uit.ac.ma/\" target=\"_blank\">ENSAK</a>.",
     "opinions": {
       "title": "Opinions :",
       "subtitle": "La meilleure façon de connaître quelqu'un !",
@@ -24,7 +24,7 @@
     "interests": {
       "title": "Centres d'intérêt :",
       "items": [
-        "J'aime jouer aux échecs, parfois je joue à Minecraft ou à quleques jeux de rhythme.",
+        "J'aime jouer aux échecs, parfois je joue à Minecraft ou à quelques jeux de rythme.",
         "Je regarde des Animes et lis des Mangas souvent.",
         "La programmation compétitive.",
         "La musique.",
@@ -93,7 +93,7 @@
       "title": "- Langages de programmation :",
       "good": "Bon niveau : <span>Python</span>.",
       "intermediate": "Niveau intermédiaire : <span>JavaScript</span>.",
-      "knowledge": "Connaissances en : <span>Java, C++, PHP</span>."
+      "knowledge": "Connaissances en : <span>C, C++, PHP, R</span>."
     },
     "webdev": {
       "title": "- Développement Web :",
@@ -146,5 +146,34 @@
       "downloading": "Téléchargement...",
       "error": "Erreur : Le CV s'est enfui. Dernière fois vu en direction d'Hawaï. Bon sérieusement, j'en ferai un bon plus tard, l'actuel n'est pas terrible."
     }
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "intro": "Voici quelques projets sur lesquels j'ai travaillé :",
+    "project1": {
+      "title": "ipsum dolor sit amet consectetur adipisicing elit.",
+      "tech": "HTML, CSS, JavaScript, Bulma",
+      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum vitae itaque odit, facere minima suscipit voluptatem, accusantium odio nihil nam. Numquam itaque maxime tenetur eum? Dolorum saepe neque distinctio.",
+      "code": "Code",
+      "demo": "Démo en direct"
+    },
+    "project2": {
+      "title": "Bientôt disponible...",
+      "tech": "Projet en développement",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non quam magnam saepe dignissimos necessitatibus, molestias officiis totam sed neque porro natus, nisi illum dolor deserunt aperiam animi excepturi? Cupiditate."
+    },
+    "project3": {
+      "title": "Projet futur",
+      "tech": "À déterminer",
+      "desc": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Doloribus, cumque! Quasi, asperiores. Doloribus, cumque! Quasi, asperiores. Doloribus, cumque! Quasi, asperiores."
+    },
+    "github": {
+      "title": "En savoir plus sur GitHub",
+      "desc": "Pour une liste complète de mes dépôts et contributions, consultez mon <a href=\"https://github.com/MrElyazid\" target=\"_blank\" class=\"has-text-primary\">profil GitHub</a>."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Pensées, tutoriels"
   }
 }

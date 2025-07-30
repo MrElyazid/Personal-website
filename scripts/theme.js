@@ -1,6 +1,5 @@
 
-// Store the desired theme state until p5.js is ready
-// This needs to be in global scope so sketch.js can access it
+
 window.pendingTheme = null;
 
 
