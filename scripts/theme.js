@@ -1,6 +1,9 @@
-// Simplified Theme Management for Dark/Light Mode Toggle
 
-// Toggle between dark and light themes
+// Store the desired theme state until p5.js is ready
+// This needs to be in global scope so sketch.js can access it
+window.pendingTheme = null;
+
+
 function toggleTheme() {
   const isDark = document.documentElement.classList.toggle('dark');
   localStorage.setItem('theme', isDark ? 'dark' : 'light');
@@ -8,7 +11,7 @@ function toggleTheme() {
   updateThemeIcon(isDark);
 }
 
-// Initialize theme based on saved preference or system setting
+
 function initializeTheme() {
   const savedTheme = localStorage.getItem('theme');
   const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -22,15 +25,15 @@ function initializeTheme() {
   updateThemeIcon(theme === 'dark');
 }
 
-// Update particle background color
 function updateParticleBackground(isDark) {
   // Communicate with p5.js sketch to change background
-  if (window.sketch) {
+  if (window.sketch && typeof window.sketch.setBackground === 'function') {
     window.sketch.setBackground(isDark ? 30 : 240); // Dark gray vs light gray
+  } else {
+    window.pendingTheme = isDark;
   }
 }
 
-// Update theme toggle icon
 function updateThemeIcon(isDark) {
   const lightIcon = document.querySelector('.theme-toggle .light-icon');
   const darkIcon = document.querySelector('.theme-toggle .dark-icon');
@@ -41,7 +44,7 @@ function updateThemeIcon(isDark) {
   }
 }
 
-// Set up theme toggle buttons
+
 function setupThemeToggle() {
   const toggleButtons = document.querySelectorAll('.theme-toggle');
   toggleButtons.forEach((button) => {
@@ -49,12 +52,12 @@ function setupThemeToggle() {
   });
 }
 
-// Watch for system theme changes
+
 function watchSystemTheme() {
   if (window.matchMedia) {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     mediaQuery.addEventListener('change', (e) => {
-      // Only auto-switch if user hasn't manually set a preference
+      
       if (!localStorage.getItem('theme')) {
         const systemTheme = e.matches ? 'dark' : 'light';
         const isDark = systemTheme === 'dark';
@@ -66,7 +69,6 @@ function watchSystemTheme() {
   }
 }
 
-// Initialize theme management when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   initializeTheme();
   setupThemeToggle();

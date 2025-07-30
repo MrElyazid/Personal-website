@@ -1,6 +1,6 @@
 let particles = [];
 let backgroundColor = 240; // Default light background
-
+let numParticles
 function setup() {
   const canvas = createCanvas(windowWidth, windowHeight);
   canvas.id('particle-canvas');
@@ -13,8 +13,15 @@ function setup() {
       backgroundColor = color;
     }
   };
+  
+  // Apply pending theme if one exists
+  if (typeof window.pendingTheme !== 'undefined' && window.pendingTheme !== null) {
+    window.sketch.setBackground(window.pendingTheme ? 30 : 240);
+    // Clear the pending theme
+    window.pendingTheme = null;
+  }
 
-  const numParticles = windowWidth > 768 ? 60 : 40;
+  numParticles = windowWidth > 768 ? 60 : 40;
   for (let i = 0; i < numParticles; i++) {
     particles.push(new Particle());
   }
@@ -22,7 +29,7 @@ function setup() {
 
 function mousePressed(){
   if (mouseButton === LEFT && numParticles < 100) {
-    particles.push(new Particle(createVector(mouseX, mouseY)))
+    particles.push(new Particle(pos=createVector(mouseX, mouseY)))
     numParticles++
   }
 }
