@@ -26,11 +26,13 @@ body, html {
 h3 {
     font-weight: bold;
     color: #3998a8;
+    font-size: 2.2rem !important;
 }
 h4 {
     font-weight: bold;
     margin-top: 1.5rem;
     color: #000000;
+    font-size: 1.8rem !important;
 }
 p {
     font-size: 1.1rem;
@@ -45,7 +47,16 @@ p {
 }
 
  #container span {
+     color: #1c53d3;
+}
+
+.highlight {
     color: #1c53d3;
+    font-weight: bold;
+}
+
+.dark .highlight {
+    color: #66b3ff;
 }
 
 

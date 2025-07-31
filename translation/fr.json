@@ -9,31 +9,29 @@
   },
   "home": {
     "whoami": "$whoami :",
-    "intro": "Essoly Elyazid, 21 ans, de Casablanca Maroc, j'étudie l'informatique à <a href=\"https://ensa.uit.ac.ma/\" target=\"_blank\">ENSAK</a>.",
+    "intro": "Essoly Elyazid, 21 ans, de Casablanca Maroc, étudiant en informatique.",
     "opinions": {
       "title": "Opinions :",
       "subtitle": "La meilleure façon de connaître quelqu'un !",
       "items": [
         "Le système scolaire moderne est dépassé, il se concentre trop sur la mémorisation et les tests, au lieu d'aider les élèves à développer leur pensée critique et à apprendre par la pratique.",
         "Lichess est meilleur que chess.com.",
-        "<a href=\"https://en.wikipedia.org/wiki/Harira\" target=\"_blank\">Harira</a> est le top de la cuisine marocaine.",
-        "Le scrolling et les réseaux sociaux sont mauvais.",
-        "Messi est bien meilleur que Ronaldo."
+        "Le scrolling et les réseaux sociaux sont mauvais."
       ]
     },
     "interests": {
       "title": "Centres d'intérêt :",
       "items": [
-        "J'aime jouer aux échecs, parfois je joue à Minecraft ou à quelques jeux de rythme.",
-        "Je regarde des Animes et lis des Mangas souvent.",
-        "La programmation compétitive.",
-        "La musique.",
-        "Le code ! (évidemment...)."
+        "Je ne joue pas souvent à des jeux, mais quand je le fais, j'aime les échecs, les jeux de ma bibliothèque Steam et les anciens jeux de PS2.",
+        "J'aime vraiment Linux et les logiciels open source.",
+        "Occasionnellement je lis des mangas.",
+        "Musique.",
+        "Coder ! (évidemment...)."
       ]
     },
     "currently": {
       "title": "Actuellement :",
-      "text": "Je me concentre sur l'apprentissage de Django, Java, et beaucoup de DSA."
+      "text": "Je me concentre sur l'administration système et Devops."
     },
     "findMe": "Retrouvez-moi sur :"
   },
@@ -47,32 +45,28 @@
       },
       "schools": [
         {
-          "name": "École Nationale des sciences appliquées de Kénitra",
-          "period": "2023 - présent",
-          "comment": "Beaucoup de <a href=\"https://fr.wikipedia.org/wiki/Ch%C3%AAne\" target=\"_blank\">chênes</a> ici, j'aime ça !"
+          "name": "ENSA de Kénitra",
+          "period": "2023 - 2025",
+          "comment": "Beaucoup de chênes, j'aime ça."
         },
         {
-          "name": "École Nationale des sciences appliquées de Tétouan",
+          "name": "ENSA de Tétouan",
           "period": "2021 - 2023",
-          "comment": "Le Nord est un autre Maroc.."
+          "comment": "Le nord est beau."
         },
         {
-          "name": "Lycée Hassan Ibn Tabit",
+          "name": "Lycée",
           "period": "2018 - 2021",
-          "comment": "Période meeeh"
+          "comment": "Je ne me souviens plus..."
         }
       ]
-    },
-    "personalities": {
-      "title": "Personnalités que j'apprécie :",
-      "chess": "Joueurs d'échecs : <a href=\"https://www.youtube.com/@DanielNaroditskyGM\" target=\"_blank\">GM Daniel Naroditsky</a>, et <a href=\"https://en.wikipedia.org/wiki/Arjun_Erigaisi\" target=\"_blank\">GM Arjun Erigaisi</a>.",
-      "programmers": "Programmeurs : <a href=\"https://www.youtube.com/@Fireship\" target=\"_blank\">Jeff Delaney</a>, <a href=\"https://www.youtube.com/@TheCodingTrain\" target=\"_blank\">Daniel Shiffman</a>, <a href=\"https://www.youtube.com/@geohotarchive\" target=\"_blank\" rel=\"noopener noreferrer\">George Hotz</a>."
     },
     "chess": {
       "title": "Ouvertures d'échecs préférées :",
       "intro": "Je ne connais pas encore la théorie des ouvertures en profondeur mais :",
       "items": [
         "Je n'aime pas d4, et je joue généralement une défense gambit de la dame refusée ou une variante de la défense est-indienne contre.",
+        "Je deteste d4.",
         "Contre e4, je joue habituellement la Caro-Kann, la défense sicilienne, et parfois e5.",
         "En blancs, 95% de mes parties commencent par e4, puis dévient vers une variante Ruy Lopez ou italienne si les noirs répondent e5."
       ]
@@ -89,84 +83,50 @@
   },
   "skills": {
     "mainTitle": "Compétences :",
-    "programming": {
-      "title": "- Langages de programmation :",
-      "good": "Bon niveau : <span>Python</span>.",
-      "intermediate": "Niveau intermédiaire : <span>JavaScript</span>.",
-      "knowledge": "Connaissances en : <span>C, C++, PHP, R</span>."
-    },
-    "webdev": {
-      "title": "- Développement Web :",
-      "intro": "Je connais les bases de <span>html, css, JS, PHP</span>. Pour les frameworks et bibliothèques web :",
-      "frontend": "Frontend : <span>Vue.js</span>.",
-      "backend": "Backend : <span>Laravel</span>, <span>Flask</span> et <span>Django</span>.",
-      "databases": "Bases de données : <span>MariaDB</span>, <span>MongoDB</span>.",
-      "css": "Bibliothèques CSS : <span>Bootstrap</span>.",
-      "baas": "BaaS : <span>Firebase</span>.",
-      "other": "J'ai aussi travaillé avec d'autres technologies comme <span>React</span>, et <span>React-Native</span> pour le développement mobile."
-    },
-    "devops": {
-      "title": "- DevOps :",
-      "text": "DevOps et le développement Web Fullstack sont les deux domaines principaux qui m'intéressent actuellement. Bien que je n'aie qu'une connaissance minimale des outils comme <span>NGINX</span>, <span>Docker</span> et <span>Gitlab</span>, je vais certainement approfondir ce domaine quand j'en aurai l'occasion."
-    },
-    "datascience": {
-      "title": "- Science des données :",
-      "text": "Familier avec <span>Pandas</span>, <span>Numpy</span>, <span>Matplotlib</span> et <span>Seaborn</span>."
-    },
-    "gui": {
-      "title": "- Desktop :",
-      "text": "J'ai travaillé avec Python <span>Tkinter</span>, et je prévois de voir <span>Electron</span> ou <span>PyQt</span> à l'avenir."
-    },
-    "graphics": {
-      "title": "- Programmation créative :",
-      "text": "J'aime le projet Processing, et je suis un grand fan de <span>P5.js</span>."
-    },
-    "ai": {
-      "title": "- IA et ML :",
-      "text": "Pas encore beaucoup mais je prévois d'avoir des connaissances minimales en : <span>TensorFlow</span> et <span>Scikit-learn</span>."
-    },
-    "misc": {
-      "title": "- Divers :",
-      "text": "Les autres technologies que je connais incluent : <span>Git</span> pour le version control, les commandes de base <span>Linux</span> et <span>Bash</span> Scripting, <span>UML</span> pour la conception de logiciels et de systèmes, et bien plus encore..."
-    },
     "onlinePresence": {
       "title": "- Presence en ligne sur des platforms :"
     },
     "certificates": {
       "title": "- Certificats :",
-      "intro": "Je ne crois pas en l'évaluation des compétences à travers des certificats ou des tutoriels, mais si vous y croyez (ou si vous êtes un employeur) alors :"
+      "intro": "Je ne crois pas en l'évaluation des compétences à travers des certificats, mais si vous y croyez (ou si vous êtes un employeur) alors :"
     },
     "achievements": {
       "title": "- Autres réalisations :",
-      "codewars": "Atteinte du niveau 3 kyu sur <a href=\"https://www.codewars.com/users/MrElyazid\" target=\"_blank\" rel=\"noopener noreferrer\">codewars</a>, Top 2% mondial."
+      "codewars": "Atteinte du niveau 3 kyu sur <a href=\"https://www.codewars.com/users/MrElyazid\" target=\"_blank\" rel=\"noopener noreferrer\">codewars</a>."
     },
     "resume": {
       "title": "Télécharger mon CV",
       "button": "Télécharger CV",
       "downloading": "Téléchargement...",
-      "error": "Erreur : Le CV s'est enfui. Dernière fois vu en direction d'Hawaï. Bon sérieusement, j'en ferai un bon plus tard, l'actuel n'est pas terrible."
+      "error": "Erreur : Le CV s'est enfui. Dernière fois vu en direction d'Hawaï. sérieusement, j'en ferai un bon plus tard."
+    },
+    "skillsPage": {
+      "tldr": "En bref :",
+      "tldrText": "J'aime <span class=\"highlight\">Python</span>, <span class=\"highlight\">l'automatisation et les scripts</span>, <span class=\"highlight\">Devops</span>, <span class=\"highlight\">Go</span>, <span class=\"highlight\">Django</span>, et tout ce qui concerne <span class=\"highlight\">Linux</span>.",
+      "programmingLanguages": "Langages de programmation :",
+      "goodAt": "Bon niveau : <span class=\"highlight\">Python</span>.",
+      "beginnerAt": "Débutant : <span class=\"highlight\">Golang</span>, <span class=\"highlight\">JavaScript</span>.",
+      "knowledge": "Connaissances / expériences : Java, PHP, C/C++, Lua.",
+      "editors": "Éditeurs de code :",
+      "editorsList": "<span class=\"highlight\">Neovim</span>, <span class=\"highlight\">VScode</span>.",
+      "webDev": "Développement web :",
+      "webDevBasics": "Bases : html, css, <span class=\"highlight\">JavaScript</span>.",
+      "cssLibraries": "Bibliothèques CSS : <span class=\"highlight\">Bootstrap</span> et <span class=\"highlight\">Bulma</span>.",
+      "frameworks": "Frameworks : <span class=\"highlight\">Django</span>.",
+      "webDevOther": "Technologies avec lesquelles j'ai travaillé brièvement : Vuejs, React, Firebase, React Native, Ruby on Rails, Laravel.",
+      "databases": "Bases de données :",
+      "databasesList": "<span class=\"highlight\">Postgresql</span> avec pgadmin.",
+      "databasesList2": "<span class=\"highlight\">Mariadb</span> avec phpmyadmin.",
+      "devops": "Devops :",
+      "devopsList": "<span class=\"highlight\">Docker</span>.",
+      "devopsList2": "<span class=\"highlight\">Git</span>.",
+      "scripting": "Scripts :",
+      "scriptingList": "<span class=\"highlight\">Python</span> et <span class=\"highlight\">Bash</span>."
     }
   },
   "projects": {
     "title": "Mes Projets",
     "intro": "Voici quelques projets sur lesquels j'ai travaillé :",
-    "project1": {
-      "title": "ipsum dolor sit amet consectetur adipisicing elit.",
-      "tech": "HTML, CSS, JavaScript, Bulma",
-      "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis earum vitae itaque odit, facere minima suscipit voluptatem, accusantium odio nihil nam. Numquam itaque maxime tenetur eum? Dolorum saepe neque distinctio.",
-      "code": "Code",
-      "demo": "Démo en direct"
-    },
-    "project2": {
-      "title": "Bientôt disponible...",
-      "tech": "Projet en développement",
-      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi non quam magnam saepe dignissimos necessitatibus, molestias officiis totam sed neque porro natus, nisi illum dolor deserunt aperiam animi excepturi? Cupiditate."
-    },
-    "project3": {
-      "title": "Projet futur",
-      "tech": "À déterminer",
-      "desc": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Doloribus, cumque! Quasi, asperiores. Doloribus, cumque! Quasi, asperiores. Doloribus, cumque! Quasi, asperiores."
-    },
     "github": {
       "title": "En savoir plus sur GitHub",
       "desc": "Pour une liste complète de mes dépôts et contributions, consultez mon <a href=\"https://github.com/MrElyazid\" target=\"_blank\" class=\"has-text-primary\">profil GitHub</a>."

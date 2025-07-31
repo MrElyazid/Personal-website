@@ -62,6 +62,13 @@ function updateNavigation(translationData) {
 }
 
 function loadTranslation(language) {
+  // If English is selected, just reload the page to show default content
+  if (language === "en") {
+    localStorage.removeItem("selectedLanguage");
+    location.reload();
+    return;
+  }
+  
   localStorage.setItem("selectedLanguage", language);
 
   const languageSelector = document.getElementById("language-selector");
@@ -69,16 +76,10 @@ function loadTranslation(language) {
     languageSelector.value = language;
   }
 
-  // If English, just reload
-  if (language === "en") {
-    if (localStorage.getItem("selectedLanguage") !== null) {
-      localStorage.removeItem("selectedLanguage");
-      location.reload();
-    }
-    return;
-  }
-
-  fetch(`${window.location.pathname.includes("/pages/") ? "../translation/" : "translation/"}${language}.json`)
+  // Load translation file for the selected language
+  const translationPath = `${window.location.pathname.includes("/pages/") ? "../translation/" : "translation/"}${language}.json`;
+  
+  fetch(translationPath)
     .then(response => response.json())
     .then(data => {
       // Update navigation

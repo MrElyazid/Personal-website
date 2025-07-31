@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skills and Projects page</title>
+    <title>Skills page</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
@@ -87,107 +87,59 @@
     </nav>
 
     <div class="container mt-5" id="container">
-      <h3 class="mb-4" id="skills-maintitle" data-i18n="skills.mainTitle">Skills :</h3>
+      <h3 class="mb-4" id="skills-maintitle" data-i18n="skills.mainTitle"></h3>
 
       <div class="my-5">
-        <h4 id="programming-title" data-i18n="skills.programming.title">- Programming Languages :</h4>
+        <h4 id="tldr-title" data-i18n="skills.skillsPage.tldr"></h4>
+        <p data-i18n="skills.skillsPage.tldrText"></p>
+      </div>
+
+      <div class="my-5">
+        <h4 id="programming-title" data-i18n="skills.skillsPage.programmingLanguages"></h4>
         <ul class="list-unstyled">
-          <li id="programming-good" data-i18n="skills.programming.good">Good at: <span>Python</span>.</li>
-          <li id="programming-intermediate" data-i18n="skills.programming.intermediate">
-            Intermediate at: <span>JavaScript</span>.
-          </li>
-          <li id="programming-knowledge" data-i18n="skills.programming.knowledge">
-            Have knowledge in: <span>C, C++, PHP, R</span>.
-          </li>
+          <li data-i18n="skills.skillsPage.goodAt"></li>
+          <li data-i18n="skills.skillsPage.beginnerAt"></li>
+          <li data-i18n="skills.skillsPage.knowledge"></li>
         </ul>
       </div>
 
       <div class="my-5">
-        <h4 id="webdev-title" data-i18n="skills.webdev.title">- Web Dev :</h4>
-        <p id="webdev-intro" data-i18n="skills.webdev.intro">
-          I know the basics html, css, PHP and JS. For web frameworks and
-          libraries :
-        </p>
+        <h4 id="editors-title" data-i18n="skills.skillsPage.editors"></h4>
         <ul class="list-unstyled">
-          <li id="webdev-frontend" data-i18n="skills.webdev.frontend">Frontend: <span>Vue.js</span>.</li>
-          <li id="webdev-backend" data-i18n="skills.webdev.backend">
-            Backend: <span>Laravel</span>, <span>Flask</span> and
-            <span>Django</span>.
-          </li>
-          <li id="webdev-databases" data-i18n="skills.webdev.databases">
-            Databases: <span>MariaDB</span>, <span>MongoDB</span>.
-          </li>
-          <li id="webdev-css" data-i18n="skills.webdev.css">CSS Libraries : <span>Bootstrap</span>.</li>
-          <li id="webdev-baas" data-i18n="skills.webdev.baas">BaaS: <span>Firebase</span></li>
-        </ul>
-        <p id="webdev-other" data-i18n="skills.webdev.other">
-          I also worked with other frameworks like <span>React</span> and
-          <span>React Native</span> for Mobile dev.
-        </p>
-      </div>
-
-      <div class="my-5">
-        <h4 id="devops-title" data-i18n="skills.devops.title">- DevOps :</h4>
-        <ul class="list-unstyled">
-          <li id="devops-text" data-i18n="skills.devops.text">
-            DevOps and Fullstack Web Development are the two main fields im
-            currently interested in, although i only have minimal knowledge of
-            tools like <span>NGINX</span>, <span>Docker</span> and
-            <span>Gitlab</span> im definitely going to dive deeper into this
-            field when i get the chance.
-          </li>
+          <li data-i18n="skills.skillsPage.editorsList"></li>
         </ul>
       </div>
 
       <div class="my-5">
-        <h4 id="datascience-title" data-i18n="skills.datascience.title">- Data Science :</h4>
+        <h4 id="webdev-title" data-i18n="skills.skillsPage.webDev"></h4>
         <ul class="list-unstyled">
-          <li id="datascience-text" data-i18n="skills.datascience.text">
-            Basics of : <span>Pandas</span>, <span>Numpy</span>,
-            <span>Matplotlib</span> and <span>Seaborn</span>.
-          </li>
+          <li data-i18n="skills.skillsPage.webDevBasics"></li>
+          <li data-i18n="skills.skillsPage.cssLibraries"></li>
+          <li data-i18n="skills.skillsPage.frameworks"></li>
+        </ul>
+        <p data-i18n="skills.skillsPage.webDevOther"></p>
+      </div>
+
+      <div class="my-5">
+        <h4 id="databases-title" data-i18n="skills.skillsPage.databases"></h4>
+        <ul class="list-unstyled">
+          <li data-i18n="skills.skillsPage.databasesList"></li>
+          <li data-i18n="skills.skillsPage.databasesList2"></li>
         </ul>
       </div>
 
       <div class="my-5">
-        <h4 id="gui-title" data-i18n="skills.gui.title">- GUI Development :</h4>
+        <h4 id="devops-title" data-i18n="skills.skillsPage.devops"></h4>
         <ul class="list-unstyled">
-          <li id="gui-text" data-i18n="skills.gui.text">
-            I worked with Python <span>Tkinter</span> and <span>Pygame</span>,
-            and planning on seeing <span>Electron</span> or <span>PyQt</span> in
-            the future.
-          </li>
+          <li data-i18n="skills.skillsPage.devopsList"></li>
+          <li data-i18n="skills.skillsPage.devopsList2"></li>
         </ul>
       </div>
 
       <div class="my-5">
-        <h4 id="graphics-title" data-i18n="skills.graphics.title">- Graphics and Creative Coding :</h4>
+        <h4 id="scripting-title" data-i18n="skills.skillsPage.scripting"></h4>
         <ul class="list-unstyled">
-          <li id="graphics-text" data-i18n="skills.graphics.text">
-            I like the Processing project, and a big fan of <span>P5.js</span>.
-          </li>
-        </ul>
-      </div>
-
-      <div class="my-5">
-        <h4 id="ai-title" data-i18n="skills.ai.title">- AI and ML :</h4>
-        <ul class="list-unstyled">
-          <li id="ai-text" data-i18n="skills.ai.text">
-            Not much yet but planning on having minimal knowledge for :
-            <span>TensorFlow</span>, and <span>Scikit-learn</span>.
-          </li>
-        </ul>
-      </div>
-
-      <div class="my-5">
-        <h4 id="misc-title" data-i18n="skills.misc.title">- Misc :</h4>
-        <ul class="list-unstyled">
-          <li id="misc-text" data-i18n="skills.misc.text">
-            Other technologies I know about include: <span>Git</span> for
-            version control, Basic <span>Linux</span> and
-            <span>Bash Scripting</span> commands, <span>UML</span> for software
-            and system design, and much more...
-          </li>
+          <li data-i18n="skills.skillsPage.scriptingList"></li>
         </ul>
       </div>
 
@@ -195,8 +147,7 @@
         Online presence and Accomplishments on platforms :
       </h3>
       <p id="certificates-intro" data-i18n="skills.certificates.intro">
-        I dont believe in the evaluation of skills through certificates or
-        completing tutorials, in case you do, ( or if you're an employer ) then
+        I dont believe in the evaluation of skills through certificates, in case you do, ( or if you're an employer ) then
         :
       </p>
 
@@ -372,7 +323,7 @@
             target="_blank"
             rel="noopener noreferrer"
             >codewars</a
-          >, Top 2% worldwide .
+          >.
         </li>
         <img
           src="https://www.codewars.com/users/MrElyazid/badges/large"
