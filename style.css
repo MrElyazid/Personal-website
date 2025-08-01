@@ -192,3 +192,21 @@ html {
     width: 90vw !important;
   }
 }
+
+/* Hide content until translation is complete */
+.content-hidden {
+  display: none !important;
+}
+
+/* Dark mode overrides for specific headers */
+.dark .h3-header {
+  color: #a4e67a; /* Light green */
+}
+
+.dark .find-text {
+  color: #ffcc66; /* Light orange */
+}
+
+.dark #whoami {
+  color: #ff7a8a; /* Soft red/pink */
+}

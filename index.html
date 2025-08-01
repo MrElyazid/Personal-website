@@ -22,6 +22,11 @@
     <link rel="icon" href="assets/LegendaryCat.jpg" type="image/x-icon" />
   </head>
   <body>
+    <style>
+      .content-hidden {
+        display: none !important;
+      }
+    </style>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="#">
@@ -48,23 +53,23 @@
 
       <div id="navbarNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item active" href="#" id="nav-home" data-i18n-nav="home">
+          <a class="navbar-item active" href="/" id="nav-home" data-i18n-nav="home">
             <i class="fas fa-home"></i>
             Home
           </a>
-          <a class="navbar-item" href="pages/about.html" id="nav-about" data-i18n-nav="about">
+          <a class="navbar-item" href="/pages/about.html" id="nav-about" data-i18n-nav="about">
             <i class="fas fa-user"></i>
             About
           </a>
-          <a class="navbar-item" href="pages/skills.html" id="nav-skills" data-i18n-nav="skills">
+          <a class="navbar-item" href="/pages/skills.html" id="nav-skills" data-i18n-nav="skills">
             <i class="fas fa-tasks"></i>
             Skills
           </a>
-          <a class="navbar-item" href="pages/projects.html" id="nav-projects" data-i18n-nav="projects">
+          <a class="navbar-item" href="/pages/projects.html" id="nav-projects" data-i18n-nav="projects">
             <i class="fas fa-code"></i>
             Projects
           </a>
-          <a class="navbar-item" href="pages/blog.html" id="nav-blog" data-i18n-nav="blog">
+          <a class="navbar-item" href="/pages/blog.html" id="nav-blog" data-i18n-nav="blog">
             <i class="fas fa-blog"></i>
             Blog
           </a>
@@ -88,8 +93,8 @@
         </div>
       </div>
     </nav>
-
-    <div class="container">
+    
+    <div class="container content-hidden">
       <div class="columns is-centered is-vcentered">
         <div
           class="column is-12-mobile is-6-tablet img-container mt-5 has-text-centered"
@@ -110,7 +115,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container content-hidden">
       <div class="columns">
         <div class="column is-8 is-offset-2">
           <div class="my-5">
@@ -168,7 +173,7 @@
       </div>
     </div>
 
-    <div class="container has-text-centered mt-5">
+    <div class="container has-text-centered mt-5 content-hidden">
       <h2 class="mb-3 find-text" id="find-me" data-i18n="home.findMe">Find me on :</h2>
       <div class="social-links columns is-multiline is-centered">
         <div class="social-link column is-3">

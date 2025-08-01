@@ -33,6 +33,15 @@ h2, h4 {
     font-size: 1.8rem !important;
 }
 
+/* Dark mode overrides for about page */
+.dark h2 {
+    color: #7acbff; /* Light blue */
+}
+
+.dark h4 {
+    color: #e6a4ff; /* Light purple */
+}
+
 p {
     font-size: 1.1rem;
 }

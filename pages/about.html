@@ -19,6 +19,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
   </head>
   <body>
+    <style>
+      .content-hidden {
+        display: none !important;
+      }
+    </style>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="../index.html">
@@ -40,23 +45,23 @@
 
       <div id="navbarNav" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="../index.html" id="nav-home" data-i18n-nav="home">
+          <a class="navbar-item" href="/" id="nav-home" data-i18n-nav="home">
             <i class="fas fa-home"></i>
             Home
           </a>
-          <a class="navbar-item active" href="#" id="nav-about" data-i18n-nav="about">
+          <a class="navbar-item active" href="/pages/about.html" id="nav-about" data-i18n-nav="about">
             <i class="fas fa-user"></i>
             About
           </a>
-          <a class="navbar-item" href="skills.html" id="nav-skills" data-i18n-nav="skills">
+          <a class="navbar-item" href="/pages/skills.html" id="nav-skills" data-i18n-nav="skills">
             <i class="fas fa-tasks"></i>
             Skills
           </a>
-          <a class="navbar-item" href="projects.html" id="nav-projects" data-i18n-nav="projects">
+          <a class="navbar-item" href="/pages/projects.html" id="nav-projects" data-i18n-nav="projects">
             <i class="fas fa-code"></i>
             Projects
           </a>
-          <a class="navbar-item" href="blog.html" id="nav-blog" data-i18n-nav="blog">
+          <a class="navbar-item" href="/pages/blog.html" id="nav-blog" data-i18n-nav="blog">
             <i class="fas fa-blog"></i>
             Blog
           </a>
@@ -80,8 +85,8 @@
         </div>
       </div>
     </nav>
-
-    <div class="container mt-5">
+    
+    <div class="container mt-5 content-hidden">
       <div class="mb-4">
         <h4 id="education-title" data-i18n="about.education.title">My Education :</h4>
         <div class="table-container mt-3">

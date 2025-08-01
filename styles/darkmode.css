@@ -23,6 +23,13 @@
   --navbar-active-bg: #3a3a3a;
   --navbar-active-text: #fff;
   --puzzle-text-color: #f0f0f0;
+  /* Header colors for more vibrant dark mode */
+  --h1-color: #ff7a8a; /* Soft red/pink */
+  --h2-color: #7acbff; /* Light blue */
+  --h3-color: #a4e67a; /* Light green */
+  --h4-color: #e6a4ff; /* Light purple */
+  --h5-color: #ffcc66; /* Light orange */
+  --h6-color: #66e0ff; /* Light cyan */
 }
 
 /* Update all text elements to use theme colors */
@@ -32,15 +39,33 @@
 }
 
 /* Update headers and text elements */
-.dark h1, 
-.dark h2, 
-.dark h3, 
-.dark h4, 
-.dark h5, 
-.dark h6, 
-.dark p, 
-.dark li, 
-.dark span, 
+.dark h1 {
+  color: var(--h1-color);
+}
+
+.dark h2 {
+  color: var(--h2-color);
+}
+
+.dark h3 {
+  color: var(--h3-color);
+}
+
+.dark h4 {
+  color: var(--h4-color);
+}
+
+.dark h5 {
+  color: var(--h5-color);
+}
+
+.dark h6 {
+  color: var(--h6-color);
+}
+
+.dark p,
+.dark li,
+.dark span,
 .dark div {
   color: var(--text-color);
 }
@@ -285,9 +310,14 @@
   color: var(--text-color);
 }
 
+/* Add some color variation to list items on hover */
+.dark .list-item:hover {
+  color: var(--link-color);
+}
+
 
 .dark .puzzle-text {
-  color: var(--puzzle-text-color);
+  color: var(--h5-color); /* Light orange */
 }
 
 
@@ -297,14 +327,24 @@
 
 
 .dark #whoami {
-  color: var(--text-color);
+  color: var(--h1-color); /* Soft red/pink */
 }
 
 
-.dark .h3-header,
-.dark h2,
+.dark .h3-header {
+  color: var(--h3-color);
+}
+
+.dark h2 {
+  color: var(--h2-color);
+}
+
 .dark h3 {
-  color: var(--text-color);
+  color: var(--h3-color);
+}
+
+.dark h4 {
+  color: var(--h4-color);
 }
 
 
