@@ -36,8 +36,26 @@
             width="30"
             height="24"
           />
-          <span id="nav-portfolio" data-i18n-nav="portfolio">Elyazid's Portfolio</span>
+          <span id="nav-portfolio" data-i18n-nav="portfolio" class="is-hidden-mobile">Elyazid's Portfolio</span>
         </a>
+        
+        <!-- Mobile controls - only visible on mobile -->
+        <div class="navbar-item is-hidden-tablet">
+          <button class="theme-toggle" title="Toggle dark/light mode">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </div>
+        
+        <div class="navbar-item is-hidden-tablet">
+          <div class="select is-small">
+            <select id="language-selector-mobile">
+              <option value="en">&#x1F1EC;&#x1F1E7;</option>
+              <option value="fr">&#x1F1EB;&#x1F1F7;</option>
+            </select>
+          </div>
+        </div>
+        
         <a
           role="button"
           class="navbar-burger"
@@ -76,15 +94,16 @@
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item">
+          <!-- Desktop controls - hidden on mobile -->
+          <div class="navbar-item is-hidden-mobile">
             <button class="theme-toggle" title="Toggle dark/light mode">
               <i class="fas fa-moon dark-icon"></i>
               <i class="fas fa-sun light-icon"></i>
             </button>
           </div>
-          <div class="navbar-item">
+          <div class="navbar-item is-hidden-mobile">
             <div class="select">
-              <select id="language-selector">
+              <select id="language-selector-desktop">
                 <option value="en">&#x1F1EC;&#x1F1E7; English</option>
                 <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
               </select>
@@ -176,7 +195,7 @@
     <div class="container has-text-centered mt-5 content-hidden">
       <h2 class="mb-3 find-text" id="find-me" data-i18n="home.findMe">Find me on :</h2>
       <div class="social-links columns is-multiline is-centered">
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://github.com/MrElyazid"
             class="icon-link"
@@ -185,7 +204,7 @@
           ></a>
           <p>Github</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://www.codewars.com/users/MrElyazid"
             class="icon-link"
@@ -197,7 +216,7 @@
           /></a>
           <p>Codewars</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://www.hackerrank.com/MrElyazid"
             class="icon-link"
@@ -206,7 +225,7 @@
           ></a>
           <p>HackerRank</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://www.freecodecamp.org/MrElyazid"
             class="icon-link"
@@ -215,7 +234,7 @@
           ></a>
           <p>FCC</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://exercism.io/profiles/MrElyazid"
             class="icon-link"
@@ -224,7 +243,7 @@
           ></a>
           <p>Exercism</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://www.linkedin.com/in/elyazid-essoly-2bb6062b8"
             class="icon-link"
@@ -234,7 +253,7 @@
           <p>LinkedIn</p>
         </div>
         
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://leetcode.com/u/MrElyazid/"
             class="icon-link"
@@ -247,7 +266,7 @@
           <p>LeetCode</p>
         </div>
  
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://lichess.org/@/Mr_Elyazid"
             target="_blank"
@@ -256,7 +275,7 @@
           ></a>
           <p>Lichess</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://steamcommunity.com/profiles/76561198997215925/"
             target="_blank"
@@ -265,7 +284,7 @@
           ></a>
           <p>Steam</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://myanimelist.net/profile/baldi666"
             class="icon-link"
@@ -274,7 +293,7 @@
           /></a>
           <p>MyAnimeList</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://www.last.fm/user/MrKratos05"
             class="icon-link"
@@ -283,7 +302,7 @@
           ></a>
           <p>Last.fm</p>
         </div>
-        <div class="social-link column is-3">
+        <div class="social-link column is-3-mobile is-3-tablet is-3-desktop">
           <a
             href="https://www.chess.com/member/nomomicantpauseit"
             target="_blank"

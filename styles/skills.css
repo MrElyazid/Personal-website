@@ -15,7 +15,6 @@ body, html {
     z-index: -1;
 }
 
-
 #container {
     background-color: #f8f9fa;
     border-radius: .375rem;
@@ -23,18 +22,67 @@ body, html {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     opacity: 0.85;
 }
+
+/* Mobile layout optimizations */
+@media (max-width: 767px) {
+  #container {
+    padding: 1rem;
+  }
+  
+  .columns.is-multiline {
+    margin: 0;
+  }
+  
+  .column.is-12-mobile {
+    padding: 0.5rem;
+  }
+  
+  .card {
+    margin-bottom: 1rem;
+  }
+  
+  .card-content {
+    padding: 1rem;
+  }
+}
 h3 {
     font-weight: bold;
     color: #3998a8;
     font-size: 2.2rem !important;
+    line-height: 1.3;
 }
 h4 {
     font-weight: bold;
     margin-top: 1.5rem;
     color: #000000;
     font-size: 1.8rem !important;
+    line-height: 1.4;
 }
 
+/* Mobile typography optimizations */
+@media (max-width: 767px) {
+    h3 {
+        font-size: 1.8rem !important;
+    }
+    
+    h4 {
+        font-size: 1.5rem !important;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .list-unstyled li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .highlight {
+        font-size: 0.95rem;
+    }
+}
 /* Dark mode overrides for skills page */
 .dark h3 {
     color: #a4e67a; /* Light green */
@@ -60,12 +108,12 @@ p {
 }
 
 .highlight {
-    color: #1c53d3;
-    font-weight: bold;
+  color: #1c53d3;
+  font-weight: bold;
 }
 
 .dark .highlight {
-    color: #66b3ff;
+  color: #4d94ff; /* A more vibrant blue that contrasts better with dark backgrounds */
 }
 
 
@@ -92,6 +140,40 @@ p {
     margin-top: 1.5rem !important;
 }
 
+/* Mobile spacing optimizations */
+@media (max-width: 767px) {
+  .mt-5 {
+    margin-top: 1rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .mt-3 {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Reduce spacing between list items */
+  .list-unstyled li {
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Optimize card spacing */
+  .card {
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Optimize button spacing */
+  .button {
+    margin: 0.5rem 0;
+  }
+}
 .my-5 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
@@ -109,4 +191,31 @@ p {
     display: block;
     margin: 1rem auto;
     max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  /* Additional mobile certificate card optimizations */
+  .card {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .card-content {
+    padding: 0.75rem;
+  }
+  
+  .title.is-5 {
+    font-size: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  .subtitle.is-6 {
+    font-size: 0.85rem !important;
+    line-height: 1.4;
+    margin-top: 0.5rem !important;
+  }
+  
+  .column.is-12-mobile {
+    padding: 0.25rem;
+  }
 }

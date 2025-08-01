@@ -33,8 +33,26 @@
             width="30"
             height="24"
           />
-          <span id="nav-portfolio" data-i18n-nav="portfolio">Elyazid's Portfolio</span>
+          <span id="nav-portfolio" data-i18n-nav="portfolio" class="is-hidden-mobile">Elyazid's Portfolio</span>
         </a>
+        
+        <!-- Mobile controls - only visible on mobile -->
+        <div class="navbar-item is-hidden-tablet">
+          <button class="theme-toggle" title="Toggle dark/light mode">
+            <i class="fas fa-moon dark-icon"></i>
+            <i class="fas fa-sun light-icon"></i>
+          </button>
+        </div>
+        
+        <div class="navbar-item is-hidden-tablet">
+          <div class="select is-small">
+            <select id="language-selector-mobile">
+              <option value="en">&#x1F1EC;&#x1F1E7;</option>
+              <option value="fr">&#x1F1EB;&#x1F1F7;</option>
+            </select>
+          </div>
+        </div>
+        
         <a
           role="button"
           class="navbar-burger"
@@ -73,15 +91,16 @@
         </div>
 
         <div class="navbar-end">
-          <div class="navbar-item">
+          <!-- Desktop controls - hidden on mobile -->
+          <div class="navbar-item is-hidden-mobile">
             <button class="theme-toggle" title="Toggle dark/light mode">
               <i class="fas fa-moon dark-icon"></i>
               <i class="fas fa-sun light-icon"></i>
             </button>
           </div>
-          <div class="navbar-item">
+          <div class="navbar-item is-hidden-mobile">
             <div class="select">
-              <select id="language-selector">
+              <select id="language-selector-desktop">
                 <option value="en">&#x1F1EC;&#x1F1E7; English</option>
                 <option value="fr">&#x1F1EB;&#x1F1F7; Français</option>
               </select>

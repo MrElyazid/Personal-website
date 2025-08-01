@@ -99,9 +99,15 @@ function loadTranslation(language) {
   
   localStorage.setItem("selectedLanguage", language);
 
-  const languageSelector = document.getElementById("language-selector");
-  if (languageSelector) {
-    languageSelector.value = language;
+  const languageSelectorMobile = document.getElementById("language-selector-mobile");
+  const languageSelectorDesktop = document.getElementById("language-selector-desktop");
+  
+  if (languageSelectorMobile) {
+    languageSelectorMobile.value = language;
+  }
+  
+  if (languageSelectorDesktop) {
+    languageSelectorDesktop.value = language;
   }
 
   // Check cache first
@@ -178,9 +184,18 @@ window.addEventListener("load", () => {
 
 // Main event listener
 document.addEventListener("DOMContentLoaded", () => {
-  const languageSelector = document.getElementById("language-selector");
-  if (languageSelector) {
-    languageSelector.addEventListener("change", (event) => {
+  const languageSelectorMobile = document.getElementById("language-selector-mobile");
+  const languageSelectorDesktop = document.getElementById("language-selector-desktop");
+  
+  if (languageSelectorMobile) {
+    languageSelectorMobile.addEventListener("change", (event) => {
+      const selectedLanguage = event.target.value;
+      loadTranslation(selectedLanguage);
+    });
+  }
+  
+  if (languageSelectorDesktop) {
+    languageSelectorDesktop.addEventListener("change", (event) => {
       const selectedLanguage = event.target.value;
       loadTranslation(selectedLanguage);
     });

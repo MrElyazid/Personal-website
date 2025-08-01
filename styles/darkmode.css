@@ -196,8 +196,8 @@
 }
 
 .dark .article-body th {
-  background-color: #3a3a3a;
-  color: #ffffff;
+  background-color: #4a4a4a; /* Slightly lighter background for better contrast */
+  color: #7acbff; /* Light blue to match other headers in dark mode */
   font-weight: 600;
 }
 
@@ -211,8 +211,8 @@
 
 
 .dark .table thead th {
-  background-color: #3a3a3a;
-  color: #ffffff;
+  background-color: #4a4a4a; /* Slightly lighter background for better contrast */
+  color: #7acbff; /* Light blue to match other headers in dark mode */
   font-weight: 600;
 }
 
@@ -257,6 +257,9 @@
   border-radius: 50%;
   transition: all 0.3s ease;
   color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-toggle:hover {
@@ -266,7 +269,6 @@
 .dark .theme-toggle:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .theme-toggle .light-icon {
   display: none;
@@ -282,6 +284,19 @@
 
 .dark .theme-toggle .dark-icon {
   display: none;
+}
+
+/* Mobile-specific dark mode optimizations */
+@media (max-width: 767px) {
+  .theme-toggle {
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .dark .theme-toggle {
+    padding: 0.25rem;
+    font-size: 1rem;
+  }
 }
 
 

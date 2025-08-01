@@ -27,12 +27,53 @@ body, html {
 padding: 2rem;
 }
 
+/* Mobile layout optimizations */
+@media (max-width: 767px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+    padding: 0.5rem;
+  }
+  
+  table {
+    font-size: 0.85rem;
+    min-width: 100%;
+  }
+  
+  th, td {
+    padding: 0.5rem 0.25rem;
+  }
+}
 h2, h4 {
     font-weight: bold;
     color: #000000;
     font-size: 1.8rem !important;
+    line-height: 1.3;
 }
 
+/* Mobile typography optimizations */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    h4 {
+        font-size: 1.3rem !important;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .list-unstyled li {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
 /* Dark mode overrides for about page */
 .dark h2 {
     color: #7acbff; /* Light blue */
@@ -74,6 +115,35 @@ ul {
     margin-top: 1.5rem !important;
 }
 
+/* Mobile spacing optimizations */
+@media (max-width: 767px) {
+  .mt-5 {
+    margin-top: 1rem !important;
+  }
+  
+  .my-5 {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .mb-4 {
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .mt-3 {
+    margin-top: 0.5rem !important;
+  }
+  
+  /* Reduce spacing between list items */
+  .list-unstyled li {
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Optimize table spacing */
+  .table-container {
+    margin-bottom: 1rem;
+  }
+}
 .my-5 {
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
