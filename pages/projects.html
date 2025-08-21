@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="../styles/about_style.css" />
+    <link rel="stylesheet" href="../styles/projects.css" />
     <link rel="stylesheet" href="../styles/navstyle.css" />
     <link rel="stylesheet" href="../styles/darkmode.css" />
     <link
@@ -111,35 +111,183 @@
     </nav>
     
     <div class="container mt-5 content-hidden">
-      <h2 class="title is-2" id="projects-title" data-i18n="projects.title">My Projects</h2>
-      <p class="subtitle" id="projects-intro" data-i18n="projects.intro">
+      <h2 class="title is-2" id="projects-title">Projects</h2>
+      <p class="subtitle has-text-centered" id="projects-intro">
         Here are some of the projects I've worked on:
       </p>
 
-      <div class="columns is-multiline">
-        <!-- Single "Coming Soon" Card -->
-        <div class="column is-12">
-          <div class="card">
-            <div class="card-content has-text-centered">
-              <div class="content">
-                <h3 class="title is-3">Coming Soon</h3>
-                <p class="subtitle is-5">Check back later!</p>
-                <i class="fas fa-tools fa-3x" style="opacity: 0.3; margin-top: 1rem;"></i>
-              </div>
-            </div>
+      <div class="project-list">
+        <!-- Spotfetch Project -->
+        <div class="project-item">
+          <h3 class="title is-3">SpotFetch</h3>
+          <p class="project-description">A cli tool made with python for downloading Music</p>
+          
+          <div class="project-tags">
+            <span class="tag">automation</span>
+            <span class="tag">python</span>
+            <span class="tag">scripting</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/SpotFetch" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Blossom Project -->
+        <div class="project-item">
+          <h3 class="title is-3">Blossom</h3>
+          <p class="project-description">A prototype for a mobile app with vision models and a custom RAG chatbot for skin diagnosis, note that its mostly vibe-coded.</p>
+          
+          <div class="project-tags">
+            <span class="tag">AI</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Firbase</span>
+            <span class="tag vibe-coding">Vibe-Coding</span>
+            <span class="tag">group project</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/blossom" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- JobHunter Project -->
+        <div class="project-item">
+          <h3 class="title is-3">JobHunter</h3>
+          <p class="project-description">An academic and school project for web scraping in java ( seriously who does that?? ). Since it was unrealistic for a java noob to actually code something this big, the project was ENTIRELY VIBE-CODED, i mean.. blame the system ;(</p>
+          
+          <div class="project-tags">
+            <span class="tag">web scraping</span>
+            <span class="tag">data-preprocessing</span>
+            <span class="tag">data visualization</span>
+            <span class="tag vibe-coding">Vibe-Coding</span>
+            <span class="tag">group project</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/JobHunter" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- P5lab Project -->
+        <div class="project-item">
+          <h3 class="title is-3">P5lab</h3>
+          <p class="project-description">A collection of mini games made with p5.js. p5.js is awesome!</p>
+          
+          <div class="project-tags">
+            <span class="tag">creative coding</span>
+            <span class="tag">javascript</span>
+            <span class="tag">p5.js</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/P5Lab" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+            <a href="https://mrelyazid.github.io/P5Lab/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Sorting Visualizer Project -->
+        <div class="project-item">
+          <h3 class="title is-3">Sorting Visualizer</h3>
+          <p class="project-description">The classic project of visualizing sorting algorithms. Works for bubble, quick, insertion, Merge sort.</p>
+          
+          <div class="project-tags">
+            <span class="tag">algorithm</span>
+            <span class="tag">visualization</span>
+            <span class="tag">javascript</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/SortingVisualizer" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+            <a href="https://mrelyazid.github.io/SortingVisualizer/" target="_blank" class="project-link">
+              <i class="fas fa-external-link-alt"></i> Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Library Management System Project -->
+        <div class="project-item">
+          <h3 class="title is-3">Library Management System</h3>
+          <p class="project-description">A learning project where I tried working with a web framework and explore features like an ORM, database migrations, template engine, etc. I did use AI assistance since I'm not familiar with Laravel syntax and the goal was exploring modern web apps architecture through the framework.</p>
+          
+          <div class="project-tags">
+            <span class="tag">Laravel</span>
+            <span class="tag">web-dev</span>
+            <span class="tag">CRUD</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/LibraryManagementSystem" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- LittlePyProjects Project -->
+        <div class="project-item">
+          <h3 class="title is-3">LittlePyProjects</h3>
+          <p class="project-description">A collection of games and mini projects made with python using tkinter and pygame.</p>
+          
+          <div class="project-tags">
+            <span class="tag">python</span>
+            <span class="tag">gui</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/LittlePyProjects" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- Personal Website Project -->
+        <div class="project-item">
+          <h3 class="title is-3">Personal Website</h3>
+          <p class="project-description">The website you're on right now! Built with html/css/js p5.js for the particles background and Bulma as a css library, jekyll is used for the blog section.</p>
+          
+          <div class="project-tags">
+            <span class="tag">web-dev</span>
+            <span class="tag">jekyll</span>
+            <span class="tag">bulma</span>
+          </div>
+
+          <div class="project-links">
+            <a href="https://github.com/MrElyazid/Personal-website" target="_blank" class="project-link">
+              <i class="fab fa-github"></i> Source Code
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="my-5">
-        <h3 class="title is-3" id="github-section" data-i18n="projects.github.title">Find More on GitHub</h3>
-        <p id="github-desc" data-i18n="projects.github.desc">
+      <!-- More to come section -->
+      <div class="more-to-come">
+        <h3 class="title is-3">More to come</h3>
+        <p class="project-description">I'm shifting my focus towards python, backend development and scripting and automation. Future projects will focus on these areas.</p>
+        <i class="fas fa-code fa-3x" style="opacity: 0.3; margin-top: 1rem;"></i>
+      </div>
+
+      <div class="github-section">
+        <h3 class="title is-3" id="github-section">Find More on GitHub</h3>
+        <p class="has-text-centered" id="github-desc">
           For a complete list of my repositories and contributions, check out my
           <a
             href="https://github.com/MrElyazid"
             target="_blank"
-            class="has-text-primary"
-            >GitHub profile</a
+            class="project-link"
+            ><i class="fab fa-github"></i> GitHub profile</a
           >.
         </p>
       </div>
@@ -167,6 +315,14 @@
             });
           });
         }
+        
+        // Show content after page load
+        setTimeout(() => {
+          const containers = document.querySelectorAll('.content-hidden');
+          containers.forEach(container => {
+            container.classList.remove('content-hidden');
+          });
+        }, 100);
       });
     </script>
   </body>

@@ -103,17 +103,13 @@ p {
     margin-bottom: .5rem;
 }
 
- #container span {
-     color: #1c53d3;
-}
-
 .highlight {
-  color: #1c53d3;
+  color: #2140bb;
   font-weight: bold;
 }
 
 .dark .highlight {
-  color: #4d94ff; /* A more vibrant blue that contrasts better with dark backgrounds */
+  color: #59c2da; /* A more vibrant blue that contrasts better with dark backgrounds */
 }
 
 
@@ -123,7 +119,6 @@ p {
     margin: auto;
 }
 }
-
 
 .button {
     outline: none;

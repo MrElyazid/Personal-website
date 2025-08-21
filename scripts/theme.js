@@ -1,5 +1,3 @@
-
-
 window.pendingTheme = null;
 
 
@@ -12,9 +10,9 @@ function toggleTheme() {
 
 
 function initializeTheme() {
+  // Set dark mode as default
   const savedTheme = localStorage.getItem('theme');
-  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  const theme = savedTheme || systemTheme;
+  const theme = savedTheme || 'dark'; // Default to 'dark' instead of system theme
   
   if (theme === 'dark') {
     document.documentElement.classList.add('dark');
@@ -57,6 +55,7 @@ function watchSystemTheme() {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     mediaQuery.addEventListener('change', (e) => {
       
+      // Only follow system theme if user hasn't explicitly set a preference
       if (!localStorage.getItem('theme')) {
         const systemTheme = e.matches ? 'dark' : 'light';
         const isDark = systemTheme === 'dark';

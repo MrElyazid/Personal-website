@@ -325,11 +325,6 @@
   color: var(--text-color);
 }
 
-/* Add some color variation to list items on hover */
-.dark .list-item:hover {
-  color: var(--link-color);
-}
-
 
 .dark .puzzle-text {
   color: var(--h5-color); /* Light orange */

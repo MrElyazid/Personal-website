@@ -1,0 +1,269 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+#particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    padding: 2rem;
+}
+
+/* Mobile layout optimizations */
+@media (max-width: 767px) {
+    .container {
+        padding: 1rem;
+    }
+}
+
+h2 {
+    font-weight: bold;
+    color: #000000;
+    font-size: 2rem !important;
+    line-height: 1.3;
+    margin-bottom: 1.5rem !important;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    color: #333333;
+    font-size: 1.5rem !important;
+    line-height: 1.4;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Mobile typography optimizations */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    h3 {
+        font-size: 1.3rem !important;
+    }
+    
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .project-tags .tag {
+        font-size: 0.7rem;
+        padding: 0.25em 0.5em;
+        margin: 0.15rem;
+    }
+}
+
+/* Dark mode overrides for projects page */
+.dark h2 {
+    color: #7acbff; /* Light blue */
+}
+
+.dark h3 {
+    color: #a4e67a; /* Light green */
+}
+
+.dark p {
+    color: var(--text-color);
+}
+
+.project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.dark .project-description {
+    color: #ccc;
+}
+
+/* Project list */
+.project-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-item {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    background-color: #f8f9fa;
+}
+
+.dark .project-item {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+}
+
+/* Project tags with more colors */
+.project-tags {
+    margin: 1rem 0;
+}
+
+.project-tags .tag {
+    margin: 0.25rem;
+    padding: 0.35em 0.75em;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* Colorful tags */
+.project-tags .tag:nth-child(1) { background-color: #007bff; color: white; }
+.project-tags .tag:nth-child(2) { background-color: #28a745; color: white; }
+.project-tags .tag:nth-child(3) { background-color: #ffc107; color: #212529; }
+.project-tags .tag:nth-child(4) { background-color: #dc3545; color: white; }
+.project-tags .tag:nth-child(5) { background-color: #6f42c1; color: white; }
+.project-tags .tag:nth-child(6) { background-color: #20c997; color: white; }
+.project-tags .tag:nth-child(7) { background-color: #fd7e14; color: white; }
+.project-tags .tag:nth-child(8) { background-color: #6610f2; color: white; }
+.project-tags .tag:nth-child(9) { background-color: #e83e8c; color: white; }
+.project-tags .tag:nth-child(10) { background-color: #17a2b8; color: white; }
+
+.dark .project-tags .tag:nth-child(1) { background-color: #007bff; }
+.dark .project-tags .tag:nth-child(2) { background-color: #28a745; }
+.dark .project-tags .tag:nth-child(3) { background-color: #ffc107; color: #212529; }
+.dark .project-tags .tag:nth-child(4) { background-color: #dc3545; }
+.dark .project-tags .tag:nth-child(5) { background-color: #6f42c1; }
+.dark .project-tags .tag:nth-child(6) { background-color: #20c997; }
+.dark .project-tags .tag:nth-child(7) { background-color: #fd7e14; }
+.dark .project-tags .tag:nth-child(8) { background-color: #6610f2; }
+.dark .project-tags .tag:nth-child(9) { background-color: #e83e8c; }
+.dark .project-tags .tag:nth-child(10) { background-color: #17a2b8; }
+
+/* Special "Vibe-Coding" tag in red */
+.project-tags .tag.vibe-coding {
+    background-color: #dc3545 !important;
+    color: white !important;
+}
+
+/* Project links */
+.project-links {
+    margin-top: 1rem;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.dark .project-link {
+    color: var(--link-color);
+}
+
+.dark .project-link:hover {
+    color: var(--link-hover-color);
+}
+
+.project-link i {
+    margin-right: 0.5rem;
+}
+
+/* Bulma utility overrides */
+.mt-5 {
+    margin-top: 1.5rem !important;
+}
+
+.my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1rem !important;
+}
+
+.has-text-centered {
+    text-align: center !important;
+}
+
+/* Mobile spacing optimizations */
+@media (max-width: 767px) {
+    .mt-5 {
+        margin-top: 1rem !important;
+    }
+    
+    .my-5 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .project-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .project-tags {
+        margin: 0.75rem 0;
+    }
+    
+    .project-links {
+        margin-top: 0.75rem;
+    }
+    
+    .project-link {
+        font-size: 0.9rem;
+        margin-right: 0.75rem;
+    }
+}
+
+/* GitHub section */
+.github-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dark .github-section {
+    border-top: 1px solid #444;
+}
+
+/* More to come section */
+.more-to-come {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    background-color: #f8f9fa;
+}
+
+.dark .more-to-come {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+}
