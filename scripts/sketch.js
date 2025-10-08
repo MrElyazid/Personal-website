@@ -1,21 +1,24 @@
 let particles = [];
 let backgroundColor = 240; // Default light background
-let numParticles
+let numParticles;
 function setup() {
   const canvas = createCanvas(windowWidth, windowHeight);
-  canvas.id('particle-canvas');
-  canvas.style('z-index', '-1');
+  canvas.id("particle-canvas");
+  canvas.style("z-index", "-1");
   frameRate(30);
 
   // Make sketch accessible globally
   window.sketch = {
     setBackground: (color) => {
       backgroundColor = color;
-    }
+    },
   };
-  
+
   // Apply pending theme if one exists
-  if (typeof window.pendingTheme !== 'undefined' && window.pendingTheme !== null) {
+  if (
+    typeof window.pendingTheme !== "undefined" &&
+    window.pendingTheme !== null
+  ) {
     window.sketch.setBackground(window.pendingTheme ? 30 : 240);
     // Clear the pending theme
     window.pendingTheme = null;
@@ -27,10 +30,10 @@ function setup() {
   }
 }
 
-function mousePressed(){
+function mousePressed() {
   if (mouseButton === LEFT && numParticles < 100) {
-    particles.push(new Particle(pos=createVector(mouseX, mouseY)))
-    numParticles++
+    particles.push(new Particle((pos = createVector(mouseX, mouseY))));
+    numParticles++;
   }
 }
 
@@ -43,12 +46,21 @@ function draw() {
   }
 }
 
+let scrollTimeout;
+function windowScrolled() {
+  noLoop();
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    loop();
+  }, 150);
+}
+
 class Particle {
   constructor(pos = createVector(random(width), random(height))) {
     this.pos = pos;
     this.vel = createVector(random(-1, 1), random(-1, 1));
     this.size = random(3, 10);
-    this.colorOffset = random(0, 255); 
+    this.colorOffset = random(0, 255);
   }
 
   update() {
