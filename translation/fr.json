@@ -22,7 +22,7 @@
     "interests": {
       "title": "Centres d'intérêt :",
       "items": [
-        "Je ne joue pas souvent à des jeux videos, mais quand je le fais, j'aime les échecs, des sur Steam ou des anciens jeux de PS2.",
+        "Je ne joue pas souvent à des jeux videos, mais quand je le fais, j'aime les échecs, des jeux sur Steam, Minecraft ou des anciens jeux de PS2.",
         "J'aime Linux et les logiciels open source.",
         "Occasionnellement je lis des mangas.",
         "Musique.",
@@ -58,6 +58,11 @@
           "name": "Lycée",
           "period": "2018 - 2021",
           "comment": "Je ne me souviens plus..."
+        },
+        {
+          "name": "Polytech Angers",
+          "period": "2025- présent",
+          "comment": "Loin de chez moi :("
         }
       ]
     },

@@ -56,6 +56,7 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 - [Stirling-pdf](https://github.com/Stirling-Tools/Stirling-PDF) : An all in one pdf management tools and swiss-army knife.
 - [Pandoc](https://pandoc.org/) : A cheatcode for converting files from a format to another.
 - [Reaveal.js](https://revealjs.com/) : Make stunning presentations using HTML.
+- [ocrmypdf](https://github.com/ocrmypdf/OCRmyPDF) : A [tesseract](https://github.com/tesseract-ocr/tesseract) wrapper for ocring pdfs.
 
 ### Terminal :
 
@@ -72,6 +73,7 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 ### Misc :
 
 - [uv](https://docs.astral.sh/uv/) : a drop-in pip replacement for python.
+- [pypy](https://pypy.org/) : python but JIT compiled.
 - [Cherry-studio](https://github.com/CherryHQ/cherry-studio) : A client to unify communication with multiple LLMs, for AI powerusers.
 - [Flameshot](https://flameshot.org/) : awesome and multi-feature screenshots program.
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) : video / audio downloader.
