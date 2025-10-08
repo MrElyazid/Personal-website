@@ -22,8 +22,8 @@
     "interests": {
       "title": "Centres d'intérêt :",
       "items": [
-        "Je ne joue pas souvent à des jeux, mais quand je le fais, j'aime les échecs, les jeux de ma bibliothèque Steam et les anciens jeux de PS2.",
-        "J'aime vraiment Linux et les logiciels open source.",
+        "Je ne joue pas souvent à des jeux videos, mais quand je le fais, j'aime les échecs, des sur Steam ou des anciens jeux de PS2.",
+        "J'aime Linux et les logiciels open source.",
         "Occasionnellement je lis des mangas.",
         "Musique.",
         "Coder ! (évidemment...)."
@@ -47,7 +47,7 @@
         {
           "name": "ENSA de Kénitra",
           "period": "2023 - 2025",
-          "comment": "Beaucoup de chênes, j'aime ça."
+          "comment": "Beaucoup de chênes :)"
         },
         {
           "name": "ENSA de Tétouan",
@@ -63,9 +63,9 @@
     },
     "chess": {
       "title": "Ouvertures d'échecs préférées :",
-      "intro": "Je ne connais pas encore la théorie des ouvertures en profondeur mais :",
+      "intro": "Je ne connais pas encore des ouvertures en profondeur mais :",
       "items": [
-        "Je n'aime pas d4, et je joue généralement une défense gambit de la dame refusée ou une variante de la défense est-indienne contre.",
+        "Je n'aime pas d4, et je joue généralement une défense Queen's gambit declined contre.",
         "Je deteste d4.",
         "Contre e4, je joue habituellement la Caro-Kann, la défense sicilienne, et parfois e5.",
         "En blancs, 95% de mes parties commencent par e4, puis dévient vers une variante Ruy Lopez ou italienne si les noirs répondent e5."
@@ -102,7 +102,7 @@
     },
     "skillsPage": {
       "tldr": "En bref :",
-      "tldrText": "J'aime <span class=\"highlight\">Python</span>, <span class=\"highlight\">l'automatisation et les scripts</span>, <span class=\"highlight\">Devops</span>, <span class=\"highlight\">Go</span>, <span class=\"highlight\">Django</span>, et tout ce qui concerne <span class=\"highlight\">Linux</span>.",
+      "tldrText": "J'aime <span class=\"highlight\">Python</span>, <span class=\"highlight\">l'automatisation et les scripts</span>, <span class=\"highlight\">Devops</span>, <span class=\"highlight\">Django</span>, et tout ce qui concerne <span class=\"highlight\">l'adminstration des systèmes</span>.",
       "programmingLanguages": "Langages de programmation :",
       "goodAt": "Bon niveau : <span class=\"highlight\">Python</span>.",
       "beginnerAt": "Débutant : <span class=\"highlight\">Golang</span>, <span class=\"highlight\">JavaScript</span>.",
