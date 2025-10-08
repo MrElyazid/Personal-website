@@ -21,6 +21,8 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 - [SumatraPDF](https://www.sumatrapdfreader.org/free-pdf-reader) : Lightweight and efficient pdf reader for windows,not available for Linux but runs fine with [wine](https://www.winehq.org/).
 - [windirstat](https://windirstat.net/) : A windows directory and files analyzer.
 - [Cygwin](https://www.cygwin.com/) : Use GNU utilities but on Windows.
+- [PowerToys](https://github.com/microsoft/PowerToys) : A collection of utilities to customize windows.
+
 
 ### Image / Video tools :
 
@@ -50,7 +52,7 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 - [excalidraw](https://github.com/excalidraw/excalidraw) : The best whiteboarding site ( can be self-hosted ) out there.
 - [drawdb](https://www.drawdb.app/) : awesome for database design.
 
-### Documennts management :
+### Documents management :
 
 - [Okular](https://okular.kde.org/) : very good PDF reader for linux systems.
 - [Stirling-pdf](https://github.com/Stirling-Tools/Stirling-PDF) : An all in one pdf management tools and swiss-army knife.
@@ -78,6 +80,7 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 - [Flameshot](https://flameshot.org/) : awesome and multi-feature screenshots program.
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) : video / audio downloader.
 - [gallery-dl](https://github.com/mikf/gallery-dl) : image downloader.
+- [Manim](https://github.com/manimCommunity/manim) : Make beautiful Math animations.
 
 ### Android specific :
 
