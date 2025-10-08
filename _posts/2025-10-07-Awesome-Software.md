@@ -1,5 +1,5 @@
 ---
-title: A list of awesome softaware and utilities.
+title: A list of awesome software and utilities.
 date: 2025-10-07
 tags: [FOSS, programs]
 excerpt: This list bookmarks some good software and tools.
