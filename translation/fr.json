@@ -16,7 +16,8 @@
       "items": [
         "Le système scolaire moderne est dépassé, il se concentre trop sur la mémorisation et les tests, au lieu d'aider les élèves à développer leur pensée critique et à apprendre par la pratique.",
         "Lichess est meilleur que chess.com.",
-        "Le scrolling et les réseaux sociaux sont mauvais."
+        "Le scrolling et les réseaux sociaux sont mauvais.",
+        "N'utiliser pas les emojis dans le code svp."
       ]
     },
     "interests": {
@@ -31,7 +32,7 @@
     },
     "currently": {
       "title": "Actuellement :",
-      "text": "Je me concentre sur l'administration système et Devops."
+      "text": "Je me concentre sur le language Go."
     },
     "findMe": "Retrouvez-moi sur :"
   },

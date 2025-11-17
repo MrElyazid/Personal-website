@@ -23,13 +23,13 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 - [Cygwin](https://www.cygwin.com/) : Use GNU utilities but on Windows.
 - [PowerToys](https://github.com/microsoft/PowerToys) : A collection of utilities to customize windows.
 
-
 ### Image / Video tools :
 
 - [XnView MP](https://www.xnview.com/en/xnview/) : This is NOT FOSS but a FREEWARE for private and non-commercial use, but the program is just too good not to mention.
 - [VLC](https://www.videolan.org/) : The well known Audio and Video player.
 - [OpenShot](https://www.openshot.org/) : dead simple video editor if you're just looking to cut videos and apply basic editing.
 - [HandBrake](https://handbrake.fr/) : Extremely efficient video transcoder, useful for video compression.
+- [Clementine](https://www.clementine-player.org/) : a PERFECT music player.
 
 ### Gaming :
 
@@ -40,7 +40,7 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 
 ### Disk Utilities :
 
-- [Ventoy](https://www.ventoy.net/en/index.html) : Run multiple isos from the same USB without burning the iso.
+- [Ventoy](https://www.ventoy.net/en/index.html) : Run multiple isos from the same USB without burning any iso.
 - [gparted](https://gparted.org/) : Versatile disk management and partitioning utility.
 - [Timeshift](https://github.com/linuxmint/timeshift) : make backups of your system.
 - [Rufus](https://rufus.ie/en/) : make bootable usbs fast on windows.
@@ -66,6 +66,7 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 - [fish](https://fishshell.com/) : User friendly and a no-config shell, yet still customizable.
 - [SauceCodePro nerdfont](https://github.com/ryanoasis/nerd-fonts).
 - [Cheat.sh](https://github.com/chubin/cheat.sh) : You have the internet and curl ? access concise docs from the terminal.
+- [Tmux](https://github.com/tmux/tmux/wiki) : Never quit the terminal :-)
 
 ### File transfer :
 
@@ -74,9 +75,8 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 
 ### Misc :
 
-- [uv](https://docs.astral.sh/uv/) : a drop-in pip replacement for python.
+- [uv](https://docs.astral.sh/uv/) : An all in one python packages and projects manager.
 - [pypy](https://pypy.org/) : python but JIT compiled.
-- [Cherry-studio](https://github.com/CherryHQ/cherry-studio) : A client to unify communication with multiple LLMs, for AI powerusers.
 - [Flameshot](https://flameshot.org/) : awesome and multi-feature screenshots program.
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) : video / audio downloader.
 - [gallery-dl](https://github.com/mikf/gallery-dl) : image downloader.
@@ -86,4 +86,3 @@ This is a bookmark for great open-source software and utilities i know, i'll try
 
 - [Seal](https://sealapk.net/) : a video and audio downloader.
 - [Termux](https://termux.dev/en/) : A linux environement on Android.
-- [Kotatsu](https://kotatsu.app/) : Awesome manga reader app for android.
