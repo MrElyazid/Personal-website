@@ -3,7 +3,6 @@ let translationCache = {};
 
 function getCurrentPage() {
   const path = window.location.pathname;
-  if (path.includes("/pages/about.html")) return "about";
   if (path.includes("/pages/skills.html")) return "skills";
   if (path.includes("/pages/projects.html")) return "projects";
   if (path.includes("/pages/blog.html")) return "blog";

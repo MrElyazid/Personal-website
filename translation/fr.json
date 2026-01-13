@@ -1,7 +1,6 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "À propos",
     "skills": "Compétences",
     "projects": "Projets",
     "blog": "Blog",
@@ -10,16 +9,6 @@
   "home": {
     "whoami": "$whoami :",
     "intro": "Essoly Elyazid, 21 ans, de Casablanca Maroc, étudiant en informatique.",
-    "opinions": {
-      "title": "Opinions :",
-      "subtitle": "La meilleure façon de connaître quelqu'un !",
-      "items": [
-        "Le système scolaire moderne est dépassé, il se concentre trop sur la mémorisation et les tests, au lieu d'aider les élèves à développer leur pensée critique et à apprendre par la pratique.",
-        "Lichess est meilleur que chess.com.",
-        "Le scrolling et les réseaux sociaux sont mauvais.",
-        "N'utiliser pas les emojis dans le code svp."
-      ]
-    },
     "interests": {
       "title": "Centres d'intérêt :",
       "items": [
@@ -35,57 +24,6 @@
       "text": "Je me concentre sur le language Go."
     },
     "findMe": "Retrouvez-moi sur :"
-  },
-  "about": {
-    "education": {
-      "title": "Mon Éducation :",
-      "headers": {
-        "location": "Établissement",
-        "time": "Période",
-        "comment": "Commentaire"
-      },
-      "schools": [
-        {
-          "name": "ENSA de Kénitra",
-          "period": "2023 - 2025",
-          "comment": "Beaucoup de chênes :)"
-        },
-        {
-          "name": "ENSA de Tétouan",
-          "period": "2021 - 2023",
-          "comment": "Le nord est beau."
-        },
-        {
-          "name": "Lycée",
-          "period": "2018 - 2021",
-          "comment": "Je ne me souviens plus..."
-        },
-        {
-          "name": "Polytech Angers",
-          "period": "2025- présent",
-          "comment": "Loin de chez moi :("
-        }
-      ]
-    },
-    "chess": {
-      "title": "Ouvertures d'échecs préférées :",
-      "intro": "Je ne connais pas encore des ouvertures en profondeur mais :",
-      "items": [
-        "Je n'aime pas d4, et je joue généralement une défense Queen's gambit declined contre.",
-        "Je deteste d4.",
-        "Contre e4, je joue habituellement la Caro-Kann, la défense sicilienne, et parfois e5.",
-        "En blancs, 95% de mes parties commencent par e4, puis dévient vers une variante Ruy Lopez ou italienne si les noirs répondent e5."
-      ]
-    },
-    "additional": {
-      "title": "Informations supplémentaires :",
-      "items": [
-        "Je suis assez mauvais au football, pas catastrophique, mais disons normalement mauvais.",
-        "J'aime expérimenter avec les LLMs.",
-        "J'avais un hobby d'élever des pigeons quand j'étais enfant.",
-        "C'est ce qui me vient à l'esprit pour le moment."
-      ]
-    }
   },
   "skills": {
     "mainTitle": "Compétences :",
